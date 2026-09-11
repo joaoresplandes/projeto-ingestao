@@ -24,7 +24,9 @@ class BancoDados:
         with self.__conexao.cursor() as cursor:
             cursor.execute(f"""
                 SELECT 
-                    * 
+                    ID,
+                    VLR_MENSAL,
+                    VLR_COPARTICIPACAO
                 FROM {self.__NOME_TABELA_PERFIL_CLIENTE}
                 WHERE ID IN {lista_ids}"""
             )
