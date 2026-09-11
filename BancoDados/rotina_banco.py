@@ -6,11 +6,12 @@ from BancoDados.conexao import DBAuditoria
 class BancoDados:
     def __init__(self):
         self.__conexao = pyodbc.connect(DBAuditoria().ENGINE)
-        self.__NOME_TABELA: str = 'PROJETO_CHURN_AUDITORIA.dbo.CLIENTE_CHURN_AUDITA'
+        self.__NOME_TABELA_AUDITORIA: str = 'PROJETO_CHURN_AUDITORIA.dbo.CLIENTE_CHURN_AUDITA'
+        self.__NOME_TABELA_PERFIL_CLIENTE: str = 'PROJETO_CHURN_AUDITORIA.dbo.PERFIL_CLIENTE_VALORES'
 
     def consultar_tabela(self) -> pl.DataFrame:
         with self.__conexao.cursor() as cursor:
-            cursor.execute(f"SELECT * FROM {self.__NOME_TABELA}")
+            cursor.execute(f"SELECT * FROM {self.__NOME_TABELA_AUDITORIA}")
             tabela_consulta = pl.DataFrame(
                 [tuple(row) for row in cursor.fetchall()],
                 schema=[desc[0] for desc in cursor.description],
@@ -19,17 +20,32 @@ class BancoDados:
 
         return tabela_consulta
 
-    def
+    def consulta_perfil_cliente(self, lista_ids: tuple) -> pl.DataFrame:
+        with self.__conexao.cursor() as cursor:
+            cursor.execute(f"""
+                SELECT 
+                    * 
+                FROM {self.__NOME_TABELA_PERFIL_CLIENTE}
+                WHERE ID IN {lista_ids}"""
+            )
+            consulta_perfil = pl.DataFrame(
+                [tuple(row) for row in cursor.fetchall()],
+                schema=[desc[0] for desc in cursor.description],
+                orient='row'
+            )
+
+        return consulta_perfil
+
 
     def inserir_dados(self, tabela_dados: pl.DataFrame) -> None:
         placeholders = ", ".join("?" for _ in tabela_dados.columns)
 
         with self.__conexao.cursor() as cursor:
-            cursor.execute(f'TRUNCATE TABLE {self.__NOME_TABELA}')
+            cursor.execute(f'TRUNCATE TABLE {self.__NOME_TABELA_AUDITORIA}')
             cursor.fast_executemany = True
             cursor.executemany(
                 f"""
-                    INSERT INTO {self.__NOME_TABELA}(
+                    INSERT INTO {self.__NOME_TABELA_AUDITORIA}(
                     ID_CLI, 
                     CPF_CLI, 
                     NOME_COMPLETO_CLI,
