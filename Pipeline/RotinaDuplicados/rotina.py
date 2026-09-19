@@ -1,6 +1,7 @@
 from Pipeline.RotinaDuplicados.ValoresDuplicados.valores_duplicados import ValoresDuplicados
 from Pipeline.RotinaDuplicados.ValoresNaoDuplicados.valores_sem_duplicados import ValoresNaoDuplicados
 from Pipeline.RotinaDuplicados.SubRotinas.sub_rotinas import SubRotinaDuplicados
+from Comum.comum import Path
 import polars as pl
 
 
@@ -21,7 +22,7 @@ class RotinaDuplicados:
 
         return tabela_sem_duplicados
 
-    def tabela_com_duplicados(self) -> pl.DataFrame:
+    def tabela_com_duplicados(self) -> None:
         """
         Retorna um dataframe com os ultimos registros inseridos de cpfs duplicados
         :return: tabela com os ultimos cpfs duplicados
@@ -31,4 +32,8 @@ class RotinaDuplicados:
             id_duplicatos=self._lista_ids_duplicados
         )
 
-        return tabela_com_duplicados
+        tabela_com_duplicados.write_excel(
+            workbook=rf'{Path.CAMINHO_DESTINO}\CPFS_DUPLICADOS.xlsx',
+            worksheet='Duplicados'
+        )
+        # return tabela_com_duplicados
