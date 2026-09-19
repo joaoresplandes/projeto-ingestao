@@ -43,12 +43,24 @@ class Tratativas:
 
         return dict_tabela
 
-    def criar_dataframe(self, dict_tabela: dict) -> pl.DataFrame:
+    @staticmethod
+    def criar_dataframe(dict_tabela: dict) -> pl.DataFrame:
         """
         Cria o DataFrame a partir do dicionario de dados já tratado
         :param dict_tabela: dicionario de dados tratado
         :return: DataFrame com os dados tratado
         """
         tabela = pl.DataFrame(dict_tabela)
+
+        return tabela
+
+    def executar(self, dicionario_tabela: dict) -> pl.DataFrame:
+        """
+        Rotina de tratamento de dados da fonte inicial .txt
+        :param dicionario_tabela: dicionario de dados tratado
+        :return: DataFrame com os dados tratado
+        """
+        dicionario_tabela = self.tratar_colunas(dict_tabela=dicionario_tabela)
+        tabela = Tratativas.criar_dataframe(dict_tabela=dicionario_tabela)
 
         return tabela
