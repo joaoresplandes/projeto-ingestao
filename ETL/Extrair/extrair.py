@@ -1,4 +1,4 @@
-from ETL.Extrair.comum import Path
+from Comum.comum import Path
 from unidecode import unidecode
 
 
