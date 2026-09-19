@@ -18,4 +18,4 @@ class ColunasAuditoria:
                 'indcliente',
                 'ano_mes'
             ]
-    ''
+    

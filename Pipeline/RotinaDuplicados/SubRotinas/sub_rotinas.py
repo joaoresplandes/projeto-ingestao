@@ -1,8 +1,7 @@
 import polars as pl
 
 
-class ValoresDuplicados:
-
+class SubRotinaDuplicados:
     def cpfs_duplicados(self, tabela: pl.DataFrame) -> list:
         """
         Retorna uma lista com todos os cpfs que estão em duplicata na tabela
@@ -28,14 +27,13 @@ class ValoresDuplicados:
         return id_duplicatos
 
     @staticmethod
-    def filtrar_tabela_sem_duplicados(tabela: pl.DataFrame, id_duplicatos: list) -> pl.DataFrame:
+    def executar(tabela: pl.DataFrame) -> list:
         """
-        Com a lista de ids de cpfs duplicados, filtra a tabela e mantem apenas os cpfs unicos e os primeiros registros
-        dos cpfs duplicados
-        :param tabela: tabela original com todos os dados
-        :param id_duplicatos: [501, 502, 503, 504, 506, 507]
-        :return: tabela sem os cpfs duplicados
+        rotina de execução que retorna a lista de ids duplicados da tabela
+        :param tabela: tabela original
+        :return: [501, 502, 503, 504, 506, 507]
         """
-        tabela_dados_unicos = tabela.filter(~pl.col('id').is_in(id_duplicatos))
+        lista_cpfs = SubRotinaDuplicados.cpfs_duplicados(tabela=tabela)
+        lista_ids = SubRotinaDuplicados.obter_id_cpf_removidos(tabela=tabela, lista_cpfs=lista_cpfs)
 
-        return tabela_dados_unicos
+        return lista_ids
