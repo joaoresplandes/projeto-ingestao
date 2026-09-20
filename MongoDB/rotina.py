@@ -8,6 +8,10 @@ class RotinaMongo:
         self.__banco_mongo = self.__conexao[self.__nm_banco]
 
     def listar_ufs(self):
+        """
+        Listar todos os documentos da coleção ufs do banco 'db_projeto_churn'
+        :return: lista de documentos
+        """
         colecao_ufs = self.__banco_mongo['ufs']
         dados = list(colecao_ufs.find())
         self.__conexao.close()
