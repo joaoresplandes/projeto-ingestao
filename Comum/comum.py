@@ -6,3 +6,5 @@ class Path:
     CAMINHO_PROJETO: str = r'Pos_Graduacao_Engenharia_de_Dados\Preparacao_Orquestacao_Fluxo_de_Dados\Unidade02\Materiais\ProjetoChurn'
     FONTE_PROJETO: str = rf"{CAMINHO_PADRAO}\{CAMINHO_PROJETO}\Fonte\SIS_CRM_TB_CHURN.txt"
     CAMINHO_DESTINO: str = rf"{CAMINHO_PADRAO}\{CAMINHO_PROJETO}\Destino"
+
+
