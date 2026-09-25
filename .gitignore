@@ -1,5 +1,7 @@
 .env
 MongoDB/.env_mongo
+Comum/.env_banco
+*.ipynb
 .venv/
 __pycache__/
 .idea/

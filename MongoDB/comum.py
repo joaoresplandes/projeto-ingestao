@@ -1,2 +1,7 @@
+import os
+
+
 class ComumMongo:
-    PATH: str = r"C:\Users\JoãoPedroResplandesd\Estudos\ProjetosPython\ProjetoIngestao\MongoDB"
+    # PATH: str = os.getcwd()
+    PATH: str = r'/mnt/hd/Programacao/ProjetosPython/projeto-ingestao/MongoDB'
+

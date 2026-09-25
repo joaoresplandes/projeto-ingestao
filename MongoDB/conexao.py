@@ -6,7 +6,7 @@ from MongoDB.comum import ComumMongo
 
 
 class ConexaoMongoDB:
-    load_dotenv(rf'{ComumMongo.PATH}\.env_mongo')
+    load_dotenv(rf'{ComumMongo.PATH}/.env_mongo')
 
     def __init__(self):
         self.__host = os.getenv('MONGO_HOST')

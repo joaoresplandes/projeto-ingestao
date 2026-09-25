@@ -5,9 +5,9 @@ from BancoDados.conexao import DBAuditoria
 
 class BancoDados:
     def __init__(self):
-        self.__conexao = pyodbc.connect(DBAuditoria().ENGINE)
-        self.__NOME_TABELA_AUDITORIA: str = 'PROJETO_CHURN_AUDITORIA.dbo.CLIENTE_CHURN_AUDITA'
-        self.__NOME_TABELA_PERFIL_CLIENTE: str = 'PROJETO_CHURN_AUDITORIA.dbo.PERFIL_CLIENTE_VALORES'
+        self.__conexao = pyodbc.connect(DBAuditoria().engine)
+        self.__NOME_TABELA_AUDITORIA: str = 'projeto_churn.silver.cliente_churn_auditoria'
+        self.__NOME_TABELA_PERFIL_CLIENTE: str = 'projeto_churn.bronza.perfil_cliente'
 
     def consultar_tabela(self) -> pl.DataFrame:
         with self.__conexao.cursor() as cursor:
@@ -60,3 +60,6 @@ class BancoDados:
                 """,
                 [tuple(row) for row in tabela_dados.iter_rows()]
             )
+
+if __name__ == '__main__':
+    BancoDados()
