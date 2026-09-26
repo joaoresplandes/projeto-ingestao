@@ -2,7 +2,7 @@ import os
 from pymongo import MongoClient
 from dotenv import load_dotenv
 from urllib.parse import quote_plus
-from MongoDB.comum import ComumMongo
+from Ingestao.MongoDB.comum import ComumMongo
 
 
 class ConexaoMongoDB:

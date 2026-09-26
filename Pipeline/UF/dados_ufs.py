@@ -1,7 +1,5 @@
-import requests
-from MongoDB.rotina import RotinaMongo
-from pprint import pprint
-from MongoDB.comum import ComumMongo
+from Ingestao.MongoDB import RotinaMongo
+from Ingestao.MongoDB import ComumMongo
 import json
 
 

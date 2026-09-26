@@ -1,4 +1,4 @@
-from MongoDB.conexao import ConexaoMongoDB
+from Ingestao.MongoDB.conexao import ConexaoMongoDB
 
 
 class RotinaMongo:
