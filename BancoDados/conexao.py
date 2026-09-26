@@ -4,7 +4,7 @@ import pyodbc
 
 
 class DBAuditoria:
-    load_dotenv(rf"{'/'.join([path for path in os.getcwd().split('/')][:-1])}/Comum/.env_banco")
+    load_dotenv(rf"{'/'.join([path for path in os.getcwd().split('/')][:6])}/Comum/.env_banco")
 
     def __init__(self):
         self.LOGIN = os.getenv('login_banco')
