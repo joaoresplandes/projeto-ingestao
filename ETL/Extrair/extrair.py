@@ -6,7 +6,7 @@ class Extrair:
     def __init__(self):
         self.path_arquivo = Path.FONTE_PROJETO
 
-    def extrair_arquivo(self) -> str:
+    def extrair_arquivo(self) -> list:
         """
         Com o método with, carrega o conteudo do arquivo .txt no codigo
         :return: string dos dados carregados
@@ -17,7 +17,7 @@ class Extrair:
         return dados
 
     @staticmethod
-    def obter_conjunto_dados(dados: str) -> list:
+    def obter_conjunto_dados(dados: list) -> list:
         """
         Converte os dados em string estrurados em listas, com a primeira sendo o titulo das colunas e as demais listas
         sendo os dados da tabela
@@ -71,3 +71,5 @@ class Extrair:
         return dicionario_tabela
 
 
+if __name__ == '__main__':
+    print(Extrair().executar())
