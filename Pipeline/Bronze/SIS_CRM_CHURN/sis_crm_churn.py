@@ -4,7 +4,7 @@ from unidecode import unidecode
 import polars as pl
 
 
-class Extrair:
+class BronzeSisCrmChurn:
     def __init__(self):
         self.path_arquivo = Path.FONTE_PROJETO
         self.__tabela_completa = DBSisChurn().consultar_tb_completo()

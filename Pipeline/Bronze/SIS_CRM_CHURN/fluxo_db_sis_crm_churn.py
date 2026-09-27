@@ -1,4 +1,4 @@
-from Pipeline.Bronze.RotinasBanco import RotinaBanco
+from Pipeline.Bronze.RotinasBancoBronze import RotinaBanco
 from datetime import datetime
 from pyodbc import Error
 
