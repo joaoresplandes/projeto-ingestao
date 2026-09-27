@@ -1,5 +1,6 @@
 from Comum.comum import Path
 from unidecode import unidecode
+from pprint import pprint
 
 
 class Extrair:
