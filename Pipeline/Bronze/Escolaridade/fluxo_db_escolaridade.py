@@ -51,5 +51,3 @@ class DBEscolaridade(RotinaBanco):
                     values ({nm_id}, '{dsc}', '{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}')
                     """
                 )
-
-#extend(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))

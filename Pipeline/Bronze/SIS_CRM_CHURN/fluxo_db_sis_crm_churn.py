@@ -1,7 +1,6 @@
 from Pipeline.Bronze.RotinasBanco import RotinaBanco
 from datetime import datetime
 from pyodbc import Error
-import polars as pl
 
 
 class DBSisChurn(RotinaBanco):
@@ -81,6 +80,11 @@ class DBSisChurn(RotinaBanco):
 
             )
     def atualizar_tb_sis_crm_churn(self, lista_dicionario_dados: list) -> None:
+        """
+        Atualiza a tabela 'tb_sis_crm_churm' caso algum dado ja gravado tenha sido alterado na fonte
+        :param lista_dicionario_dados: {'id': '1', 'cpf': '123.456.789-01', 'nome': 'Alice', 'sobrenome': 'Alves', ...}
+        :return: None
+        """
         try:
             with self.conexao:
                 with self.conexao.cursor() as cursor:

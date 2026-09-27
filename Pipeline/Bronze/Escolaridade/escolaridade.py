@@ -55,6 +55,11 @@ class IngestaoEscolaridade:
 
     @staticmethod
     def rotina_tratativa_dados() -> list:
+        """
+        Executa rotina de tratativas iniciais minimas para organizar os dados para serem inseridos em tabeça ma camada
+        bronze
+        :return: [{'ID_ESCOLARIDADE': '1', 'DESC_ESCOLARIDADE': 'Ensino Fundamental Incompleto'}, ...]
+        """
         ingestao = IngestaoEscolaridade()
         lista_dados_brutos = ingestao.obter_dados_escolaridade()
         dados_tratados = ingestao.tratar_dados_escolaridade(lista_dados_escolaridade=lista_dados_brutos)
@@ -160,7 +165,11 @@ class IngestaoEscolaridade:
                 lista_dados_escolaridade=lista_escolaridade_novos)
             DBEscolaridade().inserir_tb_escolaridade(dicionario_dados=dicionario_dados_novos)
 
-    def rotina(self):
+    def rotina(self) -> None:
+        """
+        Executa a rotina de ingestão da tabela de escolaridade na camada Bronze
+        :return:None
+        """
         print('Iniciando Ingestão Escolaridade...')
         dados_escolaridade = self.rotina_tratativa_dados()
         self.rotina_atualizacao_banco(lista_dados_escolaridade=dados_escolaridade)

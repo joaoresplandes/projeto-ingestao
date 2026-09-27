@@ -21,6 +21,11 @@ class BancoDados:
         return tabela_consulta
 
     def consulta_perfil_cliente(self, lista_ids: tuple) -> pl.DataFrame:
+        """
+        realiza uma consulta no banco de perfil cliente para os ids informados em 'lista_ids'
+        :param lista_ids: (1, 5, 4, 15, 3)
+        :return: pl.DataFrame
+        """
         with self.__conexao.cursor() as cursor:
             cursor.execute(f"""
                 SELECT 
@@ -40,8 +45,12 @@ class BancoDados:
 
 
     def inserir_dados(self, tabela_dados: pl.DataFrame) -> None:
+        """
+        Realiza a inserção dos dados novos na tabela
+        :param tabela_dados:
+        :return:
+        """
         placeholders = ", ".join("?" for _ in tabela_dados.columns)
-
         with self.__conexao.cursor() as cursor:
             cursor.execute(f'TRUNCATE TABLE {self.__NOME_TABELA_AUDITORIA}')
             cursor.fast_executemany = True
@@ -60,6 +69,3 @@ class BancoDados:
                 """,
                 [tuple(row) for row in tabela_dados.iter_rows()]
             )
-
-if __name__ == '__main__':
-    BancoDados()

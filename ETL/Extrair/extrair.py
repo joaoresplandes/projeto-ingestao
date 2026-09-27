@@ -70,7 +70,3 @@ class Extrair:
         dicionario_tabela = self.dicionario_dados(conjunto_dados=lista_dados)
 
         return dicionario_tabela
-
-
-if __name__ == '__main__':
-    print(Extrair().executar())

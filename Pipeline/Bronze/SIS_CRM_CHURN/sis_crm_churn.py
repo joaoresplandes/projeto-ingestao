@@ -1,20 +1,13 @@
 from Comum.comum import Path
 from Pipeline.Bronze.SIS_CRM_CHURN.fluxo_db_sis_crm_churn import DBSisChurn
 from unidecode import unidecode
-from pprint import pprint
 import polars as pl
-from datetime import datetime
-
 
 
 class Extrair:
     def __init__(self):
         self.path_arquivo = Path.FONTE_PROJETO
         self.__tabela_completa = DBSisChurn().consultar_tb_completo()
-
-    @property
-    def tabela_completa(self):
-        return self.__tabela_completa
 
     def extrair_arquivo(self) -> list:
         """
@@ -162,13 +155,13 @@ class Extrair:
         else:
             print(f'{len(lt_dados_atualizados_crm_churn)} dado(s) atualizado(s) em banco!')
 
-    def rotina(self):
+    def rotina(self) -> None:
+        """
+        Rotina de execução do pipeline de ingestão da tabela principal 'sis_crm_churn
+        :return: None
+        """
         print('Iniciando processo de Ingestão da tabela CRM CHURN na camada Bronze..')
         lista_dados_sis_crm_churn = self.executar_extracao()
         self.rotina_novos_dados(lista_dicionario_dados_churn=lista_dados_sis_crm_churn)
         self.rotina_dados_atualizados(lista_dicionario_dados_churn=lista_dados_sis_crm_churn)
         print('Rotina de INgestão de CRM CHURN Finalizado!')
-
-
-if __name__ == '__main__':
-    Extrair().rotina()
