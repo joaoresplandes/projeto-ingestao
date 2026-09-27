@@ -127,7 +127,7 @@ class Extrair:
             try:
                 for nm_coluna in self.__tabela_completa.columns[1:len(self.__tabela_completa.columns) - 1]:
                     dsc = self.__tabela_completa.filter(
-                        pl.col(self.__tabela_completa.columns[0]) == int(item[self.__tabela_completa.columns[0]])
+                        pl.col(self.__tabela_completa.columns[0]) == str(item[self.__tabela_completa.columns[0]])
                     )[nm_coluna].to_list()[0]
                     if dsc != item[nm_coluna]:
                         registros_atualizados_sis_crm_churn.append(item)
@@ -157,38 +157,18 @@ class Extrair:
         """
         lt_dados_atualizados_crm_churn = self.verifica_dados_atualizados(dados_sis_crm_churn=lista_dicionario_dados_churn)
         if lt_dados_atualizados_crm_churn:
-            # DBSisChurn().inserir_db_sis_crm_churn(lista_dicionario_dados=lt_dados_atualizados_crm_churn)
+            DBSisChurn().atualizar_tb_sis_crm_churn(lista_dicionario_dados=lt_dados_atualizados_crm_churn)
             print(f'{len(lt_dados_atualizados_crm_churn)} dado(s) atualizado(s) em banco!')
         else:
             print(f'{len(lt_dados_atualizados_crm_churn)} dado(s) atualizado(s) em banco!')
 
     def rotina(self):
+        print('Iniciando processo de Ingestão da tabela CRM CHURN na camada Bronze..')
         lista_dados_sis_crm_churn = self.executar_extracao()
         self.rotina_novos_dados(lista_dicionario_dados_churn=lista_dados_sis_crm_churn)
         self.rotina_dados_atualizados(lista_dicionario_dados_churn=lista_dados_sis_crm_churn)
+        print('Rotina de INgestão de CRM CHURN Finalizado!')
 
 
 if __name__ == '__main__':
-    # Extrair().rotina()
-    final = []
-    lista_dados_sis_crm_churn = Extrair().executar_extracao()
-    for dado in lista_dados_sis_crm_churn:
-        lista_dados_original = list(dado.values())
-        lista_dados_original.append(str(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
-        lista_dados_original.append(lista_dados_original[0])
-        del lista_dados_original[0]
-        final.append(tuple(lista_dados_original))
-
-    print(final)
-    # tabela = Extrair().tabela_completa
-    # dados_banco = Extrair().verifica_dados_novos(dados_sis_crm_churn=lista_dados_sis_crm_churn)
-    #
-    # placeholder = ', '.join('?' for _ in dados_banco[0].keys()) + ', ?'
-    # print(placeholder)
-    #
-    # for dado in dados_banco:
-    #     lista_dados_original = list(dado.values())
-    #     lista_dados_original.append(str(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
-    #     final.append(tuple(lista_dados_original))
-    #
-    # print(final)
+    Extrair().rotina()

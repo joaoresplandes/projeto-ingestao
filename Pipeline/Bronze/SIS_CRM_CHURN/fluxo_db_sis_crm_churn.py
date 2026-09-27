@@ -1,5 +1,6 @@
 from Pipeline.Bronze.RotinasBanco import RotinaBanco
 from datetime import datetime
+from pyodbc import Error
 import polars as pl
 
 
@@ -80,5 +81,28 @@ class DBSisChurn(RotinaBanco):
 
             )
     def atualizar_tb_sis_crm_churn(self, lista_dicionario_dados: list) -> None:
-        pass
-
+        try:
+            with self.conexao:
+                with self.conexao.cursor() as cursor:
+                    cursor.executemany(
+                        f"""
+                            update {self.__nm_tb_sis_crm_churn}
+                            set cpf = ?,
+                                nome = ?,
+                                sobrenome = ?,
+                                idgenero = ?,
+                                estado_civil = ?,
+                                idade = ?,
+                                uf = ?,
+                                escolaridade = ?,
+                                indcliente = ?,
+                                mes = ?,
+                                ano = ?,
+                                dt_atualizacao = ?
+                        """,
+                        self.lista_dados_sis_crm_churn_atualizacao(lista_dados_churn=lista_dicionario_dados)
+                    )
+        except Error as e:
+            print(f'Errp de atualização: {e}')
+        finally:
+            self.conexao.close()
