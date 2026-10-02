@@ -1,5 +1,5 @@
 .env
-Pipeline/Bronze/MongoDB/.env_mongo
+Comum/.env_mongo
 Comum/.env_banco
 *.ipynb
 .venv/

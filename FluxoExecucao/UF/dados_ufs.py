@@ -17,7 +17,8 @@ dicionario_regiao = {}
 for item in resposta:
     dicionario_regiao[item['sigla']] = {
         'nm_uf': item['nome'],
-        'regiao_sigla': item["regiao"]['sigla'],
+        # 'regiao_sigla': item["regiao"]['sigla'],
+        'regiao_sigla': item["regiao"]['nome'],
         'regiao': item['regiao']['nome'],
         'data_insercao': datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     }
@@ -43,3 +44,10 @@ for uf in dicionario_regiao:
             {'status':True if True in list(set(lista_status_atual)) else False}
         )
 pprint(dicionario_verificacao)
+print('-'*100)
+
+for uf in dicionario_verificacao:
+    if dicionario_verificacao[uf]['status']:
+        # print(dicionario_regiao[uf])
+        # print(RotinaMongo().consultar_ufs(uf=uf))
+        RotinaMongo().atualizar_ufs(sigla_uf=uf, dados=dicionario_regiao[uf])
