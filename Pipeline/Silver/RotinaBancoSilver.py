@@ -14,8 +14,7 @@ class RotinaBanco:
         :return: pl.DataFrame
         """
         with self.__conexao.cursor() as cursor:
-            consulta = cursor.execute(f"""select * from {self.__nm_tabela_banco}"""
-            )
+            consulta = cursor.execute(f"""select * from {self.__nm_tabela_banco}""")
             consulta_estado_civil = pl.DataFrame(
                 [tuple(row) for row in consulta.fetchall()],
                 schema=[desc[0] for desc in cursor.description],
