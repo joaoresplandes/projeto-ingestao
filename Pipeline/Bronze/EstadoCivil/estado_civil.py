@@ -1,4 +1,4 @@
-from Pipeline.Bronze.origens import PathBasesComplementares
+from Comum.Fontes.origens import Path
 from Pipeline.Bronze.EstadoCivil.fluxo_db_estado_civil import DBEstadoCivil
 from json import loads
 import polars as pl
@@ -15,7 +15,7 @@ class IngestaoEstadoCivil:
         Obtem todos os dados do arquivo .json, onde tem as informações de estado civil
         :return: [{'ID_EC': 1, 'DSC_EC': 'Solteiro(a)'}, {'ID_EC': 2, 'DSC_EC': 'Casado(a)'}]
         """
-        with open(PathBasesComplementares.ARQUIVO_ESTADO_CIVIL, 'r', encoding='utf-8') as arquivo_json:
+        with open(Path.ARQUIVO_ESTADO_CIVIL, 'r', encoding='utf-8') as arquivo_json:
             dados_estado_civil = loads(arquivo_json.read())
 
         return dados_estado_civil

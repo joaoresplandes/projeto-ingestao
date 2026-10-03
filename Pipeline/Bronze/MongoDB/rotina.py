@@ -18,8 +18,15 @@ class RotinaMongo:
         """
         colecao_ufs = self.__banco_mongo['ufs']
         dados = list(colecao_ufs.find())
-        self.__conexao.close()
+
         return dados
+
+    def fechar_conexao_mongo_db(self) -> None:
+        """
+        Fecha a conexao com o mongodb
+        :return: None
+        """
+        self.__conexao.close()
 
     def dicionario_ufs(self) -> dict:
         """
@@ -134,4 +141,5 @@ class RotinaMongo:
         for uf in dicionario_verificacao:
             if dicionario_verificacao[uf]['status']:
                 self.atualizar_ufs(sigla_uf=uf, dados=dicionario_regiao[uf])
+        self.fechar_conexao_mongo_db()
 

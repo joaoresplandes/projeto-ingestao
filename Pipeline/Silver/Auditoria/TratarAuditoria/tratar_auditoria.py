@@ -1,4 +1,4 @@
-from FluxoExecucao.ClientesAtivosAuditoria.TratarAuditoria.colunas import ColunasAuditoria
+from Pipeline.Silver.Auditoria.TratarAuditoria.colunas import ColunasAuditoria
 from datetime import datetime
 import polars as pl
 
@@ -56,6 +56,11 @@ class TratarAuditoria:
 
     @staticmethod
     def coluna_atualizacao_banco(tabela_auditoria: pl.DataFrame) -> pl.DataFrame:
+        """
+        Coluna de atualização de registro
+        :param tabela_auditoria: pl.DataFrame
+        :return: pl.DataFrame com a coluna de
+        """
         tabela_auditoria = tabela_auditoria.with_columns(pl.lit(datetime.now()).alias('data_insercao'))
 
         return tabela_auditoria

@@ -18,3 +18,5 @@ class RotinaBronze:
         BronzeSisCrmChurn().rotina()
 
 
+if __name__ == '__main__':
+    RotinaBronze.executar()

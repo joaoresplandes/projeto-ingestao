@@ -1,4 +1,4 @@
-from Comum.comum import Path
+from Comum.Fontes.origens import Path
 from Pipeline.Bronze.SIS_CRM_CHURN.fluxo_db_sis_crm_churn import DBSisChurn
 from unidecode import unidecode
 import polars as pl

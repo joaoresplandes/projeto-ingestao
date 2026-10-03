@@ -1,4 +1,4 @@
-from Pipeline.Bronze.origens import PathBasesComplementares
+from Comum.Fontes.origens import Path
 from Pipeline.Bronze.Escolaridade.fluxo_db_escolaridade import DBEscolaridade
 import polars as pl
 
@@ -13,7 +13,7 @@ class IngestaoEscolaridade:
         Obtem os dados do arquivo de 'escolaridade.txt'
         :return: ['ID_ESCOLARIDADE;DESC_ESCOLARIDADE\n', '1;Ensino Fundamental Incompleto\n', ...]
         """
-        with open(PathBasesComplementares.ARQUIVO_ESCOLARIDADE, 'r', encoding='utf-8') as arquivo_txt:
+        with open(Path.ARQUIVO_ESCOLARIDADE, 'r', encoding='utf-8') as arquivo_txt:
             escolaridades = arquivo_txt.readlines()
 
         return escolaridades
