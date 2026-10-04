@@ -51,3 +51,4 @@ for uf in dicionario_verificacao:
         # print(dicionario_regiao[uf])
         # print(RotinaMongo().consultar_ufs(uf=uf))
         RotinaMongo().atualizar_ufs(sigla_uf=uf, dados=dicionario_regiao[uf])
+RotinaMongo().fechar_conexao_mongo_db()

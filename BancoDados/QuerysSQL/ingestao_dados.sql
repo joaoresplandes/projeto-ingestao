@@ -1,6 +1,6 @@
 
-	-- Povoa  projeto_churn.bronze.perfil_cliente;
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	-- Povoa  projeto_churn.bronze.tb_perfil_cliente;
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1,'S',550.00,3725.00),
 		 (2,'S',989.00,821.00),
 		 (3,'S',697.00,5567.00),
@@ -11,7 +11,7 @@
 		 (8,'S',750.00,3910.00),
 		 (9,'S',1850.00,168.00),
 		 (10,'S',697.00,7746.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (11,'S',875.00,3154.00),
 		 (12,'S',875.00,987.00),
 		 (13,'S',1035.00,null),
@@ -22,7 +22,7 @@
 		 (18,'S',875.00,5432.00),
 		 (19,'S',1500.00,null),
 		 (20,'S',750.00,6934.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (21,'S',697.00,3965.00),
 		 (22,'S',750.00,0.00),
 		 (23,'S',750.00,0.00),
@@ -33,7 +33,7 @@
 		 (28,'S',750.00,0.00),
 		 (29,'S',750.00,0.00),
 		 (30,'S',750.00,0.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (31,'S',1035.00,0.00),
 		 (32,'S',1850.00,0.00),
 		 (33,'S',1500.00,0.00),
@@ -44,7 +44,7 @@
 		 (38,'S',1500.00,0.00),
 		 (39,'S',250.00,0.00),
 		 (40,'S',875.00,0.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (41,'S',1035.00,0.00),
 		 (42,'S',1850.00,0.00),
 		 (43,'S',675.00,0.00),
@@ -55,7 +55,7 @@
 		 (48,'S',875.00,0.00),
 		 (49,'S',697.00,0.00),
 		 (50,'S',675.00,0.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (51,'S',1500.00,0.00),
 		 (52,'S',875.00,0.00),
 		 (53,'S',1500.00,0.00),
@@ -66,7 +66,7 @@
 		 (58,'S',750.00,0.00),
 		 (59,'S',675.00,0.00),
 		 (60,'S',750.00,0.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (61,'S',750.00,0.00),
 		 (62,'S',1035.00,0.00),
 		 (63,'S',875.00,0.00),
@@ -77,7 +77,7 @@
 		 (68,'S',675.00,5076.00),
 		 (69,'S',1850.00,987.00),
 		 (70,'S',675.00,7196.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (71,'S',1500.00,5296.00),
 		 (72,'S',1500.00,5568.00),
 		 (73,'S',1035.00,null),
@@ -88,7 +88,7 @@
 		 (78,'S',750.00,3911.00),
 		 (79,'S',989.00,5781.00),
 		 (80,'S',750.00,5029.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (81,'S',750.00,4185.00),
 		 (82,'S',750.00,6234.00),
 		 (83,'S',750.00,987.00),
@@ -99,7 +99,7 @@
 		 (88,'S',750.00,3911.00),
 		 (89,'S',1850.00,5568.00),
 		 (90,'S',697.00,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (91,'S',750.00,null),
 		 (92,'S',875.00,3178.00),
 		 (93,'S',1500.00,6947.00),
@@ -110,7 +110,7 @@
 		 (98,'S',750.00,5297.00),
 		 (99,'S',1850.00,4197.00),
 		 (100,'S',697.00,5058.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (101,'S',875.00,987.00),
 		 (102,'S',875.00,7999.00),
 		 (103,'S',875.00,7896.00),
@@ -121,7 +121,7 @@
 		 (108,'S',1500.00,3938.00),
 		 (109,'S',875.00,7652.00),
 		 (110,'S',550.00,3912.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (111,'S',875.00,2896.00),
 		 (112,'S',750.00,5297.00),
 		 (113,'S',1500.00,4197.00),
@@ -132,7 +132,7 @@
 		 (118,'S',1500.00,3938.00),
 		 (119,'S',1500.00,2028.00),
 		 (120,'S',875.00,3179.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (121,'S',1850.00,6934.00),
 		 (122,'S',675.00,3939.00),
 		 (123,'S',1035.00,7652.00),
@@ -143,7 +143,7 @@
 		 (128,'S',582.00,5058.00),
 		 (129,'S',1500.00,987.00),
 		 (130,'S',750.00,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (131,'S',1850.00,7896.00),
 		 (132,'S',875.00,3938.00),
 		 (133,'S',875.00,2030.00),
@@ -154,7 +154,7 @@
 		 (138,'S',697.00,3913.00),
 		 (139,'S',1850.00,2898.00),
 		 (140,'S',875.00,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (141,'S',1850.00,4503.00),
 		 (142,'S',1500.00,5058.00),
 		 (143,'S',750.00,987.00),
@@ -165,7 +165,7 @@
 		 (148,'S',750.00,3181.00),
 		 (149,'S',1500.00,6940.00),
 		 (150,'S',750.00,3940.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (151,'S',1850.00,7652.00),
 		 (152,'S',750.00,3913.00),
 		 (153,'S',750.00,2899.00),
@@ -176,7 +176,7 @@
 		 (158,'S',875.00,7999.00),
 		 (159,'S',697.00,7896.00),
 		 (160,'S',250.00,3938.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (161,'S',875.00,2034.00),
 		 (162,'S',550.00,3182.00),
 		 (163,'S',750.00,6943.00),
@@ -187,7 +187,7 @@
 		 (168,'S',875.00,5297.00),
 		 (169,'S',675.00,4509.00),
 		 (170,'S',675.00,5061.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (171,'S',697.00,987.00),
 		 (172,'S',697.00,7999.00),
 		 (173,'S',250.00,7896.00),
@@ -198,7 +198,7 @@
 		 (178,'S',697.00,3942.00),
 		 (179,'S',750.00,7652.00),
 		 (180,'S',750.00,3913.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (181,'S',750.00,2901.00),
 		 (182,'S',550.00,5297.00),
 		 (183,'S',null,4512.00),
@@ -209,7 +209,7 @@
 		 (188,'S',582.00,3938.00),
 		 (189,'S',875.00,2039.00),
 		 (190,'S',875.00,3184.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (191,'S',675.00,6949.00),
 		 (192,'S',750.00,3943.00),
 		 (193,'S',875.00,7652.00),
@@ -220,7 +220,7 @@
 		 (198,'S',750.00,5061.00),
 		 (199,'S',750.00,987.00),
 		 (200,'S',750.00,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (201,'S',875.00,2145.00),
 		 (202,'S',750.00,5487.00),
 		 (203,'S',582.00,2798.00),
@@ -231,7 +231,7 @@
 		 (208,'S',750.00,2241.00),
 		 (209,'S',582.00,4167.00),
 		 (210,'S',875.00,3017.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (211,'S',697.00,950.00),
 		 (212,'S',750.00,5379.00),
 		 (213,'S',750.00,5802.00),
@@ -242,7 +242,7 @@
 		 (218,'S',875.00,2913.00),
 		 (219,'S',750.00,2274.00),
 		 (220,'S',875.00,2556.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (221,'S',875.00,400.00),
 		 (222,'S',1500.00,3600.00),
 		 (223,'S',1850.00,4932.00),
@@ -253,7 +253,7 @@
 		 (228,'S',1035.00,2713.00),
 		 (229,'S',875.00,3280.00),
 		 (230,'S',1500.00,2757.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (231,'S',1500.00,4152.00),
 		 (232,'S',989.00,5085.00),
 		 (233,'S',1500.00,3260.00),
@@ -264,7 +264,7 @@
 		 (238,'S',750.00,2095.00),
 		 (239,'S',675.00,5154.00),
 		 (240,'S',875.00,2376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (241,'S',675.00,4701.00),
 		 (242,'S',875.00,3290.00),
 		 (243,'S',697.00,5316.00),
@@ -275,7 +275,7 @@
 		 (248,'S',675.00,2453.00),
 		 (249,'S',675.00,2454.00),
 		 (250,'S',750.00,4737.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (251,'S',750.00,4998.00),
 		 (252,'S',582.00,3042.00),
 		 (253,'S',875.00,3013.00),
@@ -286,7 +286,7 @@
 		 (258,'S',675.00,2829.00),
 		 (259,'S',697.00,2441.00),
 		 (260,'S',875.00,3615.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (261,'S',750.00,5001.00),
 		 (262,'S',750.00,2503.00),
 		 (263,'S',875.00,2763.00),
@@ -297,7 +297,7 @@
 		 (268,'S',750.00,2277.00),
 		 (269,'S',875.00,5847.00),
 		 (270,'S',750.00,3111.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (271,'S',750.00,2795.00),
 		 (272,'S',875.00,2559.00),
 		 (273,'S',875.00,4830.00),
@@ -308,7 +308,7 @@
 		 (278,'S',750.00,5004.00),
 		 (279,'S',875.00,5004.00),
 		 (280,'S',675.00,5733.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (281,'S',750.00,2823.00),
 		 (282,'S',697.00,2294.00),
 		 (283,'S',750.00,3136.00),
@@ -319,7 +319,7 @@
 		 (288,'S',null,2977.00),
 		 (289,'S',875.00,3194.00),
 		 (290,'S',750.00,3268.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (291,'S',875.00,2919.00),
 		 (292,'S',1035.00,2434.00),
 		 (293,'S',750.00,3054.00),
@@ -330,7 +330,7 @@
 		 (298,'S',750.00,4860.00),
 		 (299,'S',1035.00,2946.00),
 		 (300,'S',1356.00,2165.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (301,'S',875.00,2830.00),
 		 (302,'S',750.00,4080.00),
 		 (303,'S',989.00,3147.00),
@@ -341,7 +341,7 @@
 		 (308,'S',875.00,5445.00),
 		 (309,'S',750.00,4851.00),
 		 (310,'S',1356.00,4086.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (311,'S',875.00,4515.00),
 		 (312,'S',750.00,2184.00),
 		 (313,'S',1035.00,2347.00),
@@ -352,7 +352,7 @@
 		 (318,'S',750.00,2089.00),
 		 (319,'S',875.00,3215.00),
 		 (320,'S',750.00,2574.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (321,'S',697.00,2990.00),
 		 (322,'S',1035.00,3036.00),
 		 (323,'S',697.00,4146.00),
@@ -363,7 +363,7 @@
 		 (328,'S',875.00,5277.00),
 		 (329,'S',875.00,2120.00),
 		 (330,'S',750.00,4182.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (331,'S',1035.00,3118.00),
 		 (332,'S',1035.00,2851.00),
 		 (333,'S',750.00,4893.00),
@@ -374,7 +374,7 @@
 		 (338,'S',1035.00,2654.00),
 		 (339,'S',750.00,3075.00),
 		 (340,'S',1035.00,5703.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (341,'S',750.00,4839.00),
 		 (342,'S',875.00,3078.00),
 		 (343,'S',750.00,2272.00),
@@ -385,7 +385,7 @@
 		 (348,'S',750.00,5547.00),
 		 (349,'S',697.00,4047.00),
 		 (350,'S',750.00,2080.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (351,'S',989.00,2916.00),
 		 (352,'S',697.00,2172.00),
 		 (353,'S',875.00,2457.00),
@@ -396,7 +396,7 @@
 		 (358,'S',1035.00,5790.00),
 		 (359,'S',875.00,3124.00),
 		 (360,'S',989.00,5916.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (361,'S',1850.00,2848.00),
 		 (362,'S',1035.00,3062.00),
 		 (363,'S',750.00,2909.00),
@@ -407,7 +407,7 @@
 		 (368,'S',750.00,3046.00),
 		 (369,'S',875.00,5160.00),
 		 (370,'S',750.00,3109.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (371,'S',1035.00,3070.00),
 		 (372,'S',1356.00,2626.00),
 		 (373,'S',875.00,5343.00),
@@ -418,7 +418,7 @@
 		 (378,'S',697.00,2014.00),
 		 (379,'S',875.00,2728.00),
 		 (380,'S',875.00,5226.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (381,'S',750.00,3072.00),
 		 (382,'S',750.00,3038.00),
 		 (383,'S',989.00,4968.00),
@@ -429,7 +429,7 @@
 		 (388,'S',750.00,2233.00),
 		 (389,'S',750.00,2303.00),
 		 (390,'S',1850.00,3075.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (391,'S',1850.00,2731.00),
 		 (392,'S',1035.00,3199.00),
 		 (393,'S',875.00,2863.00),
@@ -440,7 +440,7 @@
 		 (398,'S',750.00,2781.00),
 		 (399,'S',875.00,3127.00),
 		 (400,'S',null,5539.30);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (401,'S',1035.00,6824.00),
 		 (402,'S',875.00,4913.00),
 		 (403,'S',1500.00,2167.00),
@@ -451,7 +451,7 @@
 		 (408,'S',1500.00,14567.00),
 		 (409,'S',875.00,6487.00),
 		 (410,'S',875.00,3267.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (411,'S',1500.00,6003.00),
 		 (412,'S',1035.00,7745.00),
 		 (413,'S',875.00,6321.00),
@@ -462,7 +462,7 @@
 		 (418,'S',1500.00,7500.00),
 		 (419,'S',875.00,3012.00),
 		 (420,'S',1035.00,8372.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (421,'S',1500.00,5112.00),
 		 (422,'S',1850.00,4062.00),
 		 (423,'S',1500.00,2083.00),
@@ -473,7 +473,7 @@
 		 (428,'S',1500.00,4077.00),
 		 (429,'S',1500.00,4601.00),
 		 (430,'S',1850.00,5300.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (431,'S',1850.00,2345.00),
 		 (432,'S',1500.00,5211.50),
 		 (433,'S',1850.00,7932.00),
@@ -484,7 +484,7 @@
 		 (438,'S',1500.00,6894.00),
 		 (439,'S',1500.00,3369.00),
 		 (440,'S',1500.00,6339.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (441,'S',875.00,5438.00),
 		 (442,'S',1035.00,7896.00),
 		 (443,'S',1500.00,6328.00),
@@ -495,7 +495,7 @@
 		 (448,'S',1500.00,7893.00),
 		 (449,'S',1035.00,13098.00),
 		 (450,'S',1035.00,5027.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (451,'S',989.00,2134.00),
 		 (452,'S',1500.00,5704.90),
 		 (453,'S',697.00,8034.00),
@@ -506,7 +506,7 @@
 		 (458,'S',1850.00,6345.00),
 		 (459,'S',1035.00,6349.00),
 		 (460,'S',1500.00,8376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (461,'S',1500.00,5827.00),
 		 (462,'S',1500.00,4000.00),
 		 (463,'S',1035.00,5172.50),
@@ -517,7 +517,7 @@
 		 (468,'S',1035.00,5034.00),
 		 (469,'S',1035.00,8345.00),
 		 (470,'S',1500.00,6543.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (471,'S',null,5617.00),
 		 (472,'S',1500.00,8256.00),
 		 (473,'S',697.00,6172.50),
@@ -528,7 +528,7 @@
 		 (478,'S',1500.00,5488.00),
 		 (479,'S',1850.00,4500.00),
 		 (480,'S',875.00,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (481,'S',1035.00,3129.00),
 		 (482,'S',1035.00,7432.00),
 		 (483,'S',875.00,3934.00),
@@ -539,7 +539,7 @@
 		 (488,'S',1500.00,8354.00),
 		 (489,'S',1500.00,3669.00),
 		 (490,'S',1500.00,3402.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (491,'S',875.00,6845.00),
 		 (492,'S',1035.00,3285.00),
 		 (493,'S',1500.00,7965.00),
@@ -550,7 +550,7 @@
 		 (498,'S',1500.00,5617.00),
 		 (499,'S',1035.00,7265.00),
 		 (500,'S',1500.00,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (501,'S',875.00,3725.00),
 		 (502,'S',750.00,821.00),
 		 (503,'S',750.00,5567.00),
@@ -561,7 +561,7 @@
 		 (508,'S',null,3910.00),
 		 (509,'S',null,168.00),
 		 (510,'S',null,7746.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (511,'S',null,3154.00),
 		 (512,'S',null,987.00),
 		 (513,'S',null,2458.00),
@@ -572,7 +572,7 @@
 		 (518,'S',null,5432.00),
 		 (519,'S',null,2894.00),
 		 (520,'S',null,6934.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (521,'S',null,3965.00),
 		 (522,'S',null,3918.00),
 		 (523,'S',null,987.00),
@@ -583,7 +583,7 @@
 		 (528,'S',null,5567.00),
 		 (529,'S',null,2891.00),
 		 (530,'S',null,7649.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (531,'S',null,3375.00),
 		 (532,'S',null,6932.00),
 		 (533,'S',null,4721.00),
@@ -594,7 +594,7 @@
 		 (538,'S',null,5294.00),
 		 (539,'S',null,2376.00),
 		 (540,'S',null,987.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (541,'S',null,7393.00),
 		 (542,'S',null,6029.00),
 		 (543,'S',null,5567.00),
@@ -605,7 +605,7 @@
 		 (548,'S',null,6522.00),
 		 (549,'S',null,4137.00),
 		 (550,'S',null,7776.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (551,'S',null,4512.00),
 		 (552,'S',null,6210.00),
 		 (553,'S',null,3725.00),
@@ -616,7 +616,7 @@
 		 (558,'S',null,2893.00),
 		 (559,'S',null,7503.00),
 		 (560,'S',null,6937.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (561,'S',null,5061.00),
 		 (562,'S',null,3911.00),
 		 (563,'S',null,4127.00),
@@ -627,7 +627,7 @@
 		 (568,'S',null,5076.00),
 		 (569,'S',null,987.00),
 		 (570,'S',null,7196.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (571,'S',null,5296.00),
 		 (572,'S',null,5568.00),
 		 (573,'S',null,2023.00),
@@ -638,7 +638,7 @@
 		 (578,'S',null,3911.00),
 		 (579,'S',null,5781.00),
 		 (580,'S',null,5029.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (581,'S',null,4185.00),
 		 (582,'S',null,6234.00),
 		 (583,'S',null,987.00),
@@ -649,7 +649,7 @@
 		 (588,'S',null,3911.00),
 		 (589,'S',null,5568.00),
 		 (590,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (591,'S',null,2025.00),
 		 (592,'S',null,3178.00),
 		 (593,'S',null,6947.00),
@@ -660,7 +660,7 @@
 		 (598,'S',null,5297.00),
 		 (599,'S',null,4197.00),
 		 (600,'S',null,5058.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (601,'S',null,987.00),
 		 (602,'S',null,7999.00),
 		 (603,'S',null,7896.00),
@@ -671,7 +671,7 @@
 		 (608,'S',null,3938.00),
 		 (609,'S',null,7652.00),
 		 (610,'S',null,3912.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (611,'S',null,2896.00),
 		 (612,'S',null,5297.00),
 		 (613,'S',null,4197.00),
@@ -682,7 +682,7 @@
 		 (618,'S',null,3938.00),
 		 (619,'S',null,2028.00),
 		 (620,'S',null,3179.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (621,'S',null,6934.00),
 		 (622,'S',null,3939.00),
 		 (623,'S',null,7652.00),
@@ -693,7 +693,7 @@
 		 (628,'S',null,5058.00),
 		 (629,'S',null,987.00),
 		 (630,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (631,'S',null,7896.00),
 		 (632,'S',null,3938.00),
 		 (633,'S',null,2030.00),
@@ -704,7 +704,7 @@
 		 (638,'S',null,3913.00),
 		 (639,'S',null,2898.00),
 		 (640,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (641,'S',null,4503.00),
 		 (642,'S',null,5058.00),
 		 (643,'S',null,987.00),
@@ -715,7 +715,7 @@
 		 (648,'S',null,3181.00),
 		 (649,'S',null,6940.00),
 		 (650,'S',null,3940.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (651,'S',null,7652.00),
 		 (652,'S',null,3913.00),
 		 (653,'S',null,2899.00),
@@ -726,7 +726,7 @@
 		 (658,'S',null,7999.00),
 		 (659,'S',null,7896.00),
 		 (660,'S',null,3938.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (661,'S',null,2034.00),
 		 (662,'S',null,3182.00),
 		 (663,'S',null,6943.00),
@@ -737,7 +737,7 @@
 		 (668,'S',null,5297.00),
 		 (669,'S',null,4509.00),
 		 (670,'S',null,5061.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (671,'S',null,987.00),
 		 (672,'S',null,7999.00),
 		 (673,'S',null,7896.00),
@@ -748,7 +748,7 @@
 		 (678,'S',null,3942.00),
 		 (679,'S',null,7652.00),
 		 (680,'S',null,3913.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (681,'S',null,2901.00),
 		 (682,'S',null,5297.00),
 		 (683,'S',null,4512.00),
@@ -759,7 +759,7 @@
 		 (688,'S',null,3938.00),
 		 (689,'S',null,2039.00),
 		 (690,'S',null,3184.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (691,'S',null,6949.00),
 		 (692,'S',null,3943.00),
 		 (693,'S',null,7652.00),
@@ -770,7 +770,7 @@
 		 (698,'S',null,5061.00),
 		 (699,'S',null,987.00),
 		 (700,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (701,'S',null,2145.00),
 		 (702,'S',null,5487.00),
 		 (703,'S',null,2798.00),
@@ -781,7 +781,7 @@
 		 (708,'S',null,2241.00),
 		 (709,'S',null,4167.00),
 		 (710,'S',null,3017.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (711,'S',null,950.00),
 		 (712,'S',null,5379.00),
 		 (713,'S',null,5802.00),
@@ -792,7 +792,7 @@
 		 (718,'S',null,2913.00),
 		 (719,'S',null,2274.00),
 		 (720,'S',null,2556.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (721,'S',null,400.00),
 		 (722,'S',null,3600.00),
 		 (723,'S',null,4932.00),
@@ -803,7 +803,7 @@
 		 (728,'S',null,2713.00),
 		 (729,'S',null,3280.00),
 		 (730,'S',null,2757.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (731,'S',null,4152.00),
 		 (732,'S',null,5085.00),
 		 (733,'S',null,3260.00),
@@ -814,7 +814,7 @@
 		 (738,'S',null,2095.00),
 		 (739,'S',null,5154.00),
 		 (740,'S',null,2376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (741,'S',null,4701.00),
 		 (742,'S',null,3290.00),
 		 (743,'S',null,5316.00),
@@ -825,7 +825,7 @@
 		 (748,'S',null,2453.00),
 		 (749,'S',null,2454.00),
 		 (750,'S',null,4737.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (751,'S',null,4998.00),
 		 (752,'S',null,3042.00),
 		 (753,'S',null,3013.00),
@@ -836,7 +836,7 @@
 		 (758,'S',null,2829.00),
 		 (759,'S',null,2441.00),
 		 (760,'S',null,3615.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (761,'S',null,5001.00),
 		 (762,'S',null,2503.00),
 		 (763,'S',null,2763.00),
@@ -847,7 +847,7 @@
 		 (768,'S',null,2277.00),
 		 (769,'S',null,5847.00),
 		 (770,'S',null,3111.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (771,'S',null,2795.00),
 		 (772,'S',null,2559.00),
 		 (773,'S',null,4830.00),
@@ -858,7 +858,7 @@
 		 (778,'S',null,5004.00),
 		 (779,'S',null,5004.00),
 		 (780,'S',null,5733.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (781,'S',null,2823.00),
 		 (782,'S',null,2294.00),
 		 (783,'S',null,3136.00),
@@ -869,7 +869,7 @@
 		 (788,'S',null,2977.00),
 		 (789,'S',null,3194.00),
 		 (790,'S',null,3268.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (791,'S',null,2919.00),
 		 (792,'S',null,2434.00),
 		 (793,'S',null,3054.00),
@@ -880,7 +880,7 @@
 		 (798,'S',null,4860.00),
 		 (799,'S',null,2946.00),
 		 (800,'S',null,2165.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (801,'S',null,2830.00),
 		 (802,'S',null,4080.00),
 		 (803,'S',null,3147.00),
@@ -891,7 +891,7 @@
 		 (808,'S',null,5445.00),
 		 (809,'S',null,4851.00),
 		 (810,'S',null,4086.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (811,'S',null,4515.00),
 		 (812,'S',null,2184.00),
 		 (813,'S',null,2347.00),
@@ -902,7 +902,7 @@
 		 (818,'S',null,2089.00),
 		 (819,'S',null,3215.00),
 		 (820,'S',null,2574.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (821,'S',null,2990.00),
 		 (822,'S',null,3036.00),
 		 (823,'S',null,4146.00),
@@ -913,7 +913,7 @@
 		 (828,'S',null,5277.00),
 		 (829,'S',null,2120.00),
 		 (830,'S',null,4182.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (831,'S',null,3118.00),
 		 (832,'S',null,2851.00),
 		 (833,'S',null,4893.00),
@@ -924,7 +924,7 @@
 		 (838,'S',null,2654.00),
 		 (839,'S',null,3075.00),
 		 (840,'S',null,5703.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (841,'S',null,4839.00),
 		 (842,'S',null,3078.00),
 		 (843,'S',null,2272.00),
@@ -935,7 +935,7 @@
 		 (848,'S',null,5547.00),
 		 (849,'S',null,4047.00),
 		 (850,'S',null,2080.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (851,'S',null,2916.00),
 		 (852,'S',null,2172.00),
 		 (853,'S',null,2457.00),
@@ -946,7 +946,7 @@
 		 (858,'S',null,5790.00),
 		 (859,'S',null,3124.00),
 		 (860,'S',null,5916.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (861,'S',null,2848.00),
 		 (862,'S',null,3062.00),
 		 (863,'S',null,2909.00),
@@ -957,7 +957,7 @@
 		 (868,'S',null,3046.00),
 		 (869,'S',null,5160.00),
 		 (870,'S',null,3109.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (871,'S',null,3070.00),
 		 (872,'S',null,2626.00),
 		 (873,'S',null,5343.00),
@@ -968,7 +968,7 @@
 		 (878,'S',null,2014.00),
 		 (879,'S',null,2728.00),
 		 (880,'S',null,5226.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (881,'S',null,3072.00),
 		 (882,'S',null,3038.00),
 		 (883,'S',null,4968.00),
@@ -979,7 +979,7 @@
 		 (888,'S',null,2233.00),
 		 (889,'S',null,2303.00),
 		 (890,'S',null,3075.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (891,'S',null,2731.00),
 		 (892,'S',null,3199.00),
 		 (893,'S',null,2863.00),
@@ -990,7 +990,7 @@
 		 (898,'S',null,2781.00),
 		 (899,'S',null,3127.00),
 		 (900,'S',null,5539.30);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (901,'S',null,6824.00),
 		 (902,'S',null,4913.00),
 		 (903,'S',null,2167.00),
@@ -1001,7 +1001,7 @@
 		 (908,'S',null,14567.00),
 		 (909,'S',null,6487.00),
 		 (910,'S',null,3267.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (911,'S',null,6003.00),
 		 (912,'S',null,7745.00),
 		 (913,'S',null,6321.00),
@@ -1012,7 +1012,7 @@
 		 (918,'S',null,7500.00),
 		 (919,'S',null,3012.00),
 		 (920,'S',null,8372.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (921,'S',null,5112.00),
 		 (922,'S',null,4062.00),
 		 (923,'S',null,2083.00),
@@ -1023,7 +1023,7 @@
 		 (928,'S',null,4077.00),
 		 (929,'S',null,4601.00),
 		 (930,'S',null,5300.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (931,'S',null,2345.00),
 		 (932,'S',null,5211.50),
 		 (933,'S',null,7932.00),
@@ -1034,7 +1034,7 @@
 		 (938,'S',null,6894.00),
 		 (939,'S',null,3369.00),
 		 (940,'S',null,6339.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (941,'S',null,5438.00),
 		 (942,'S',null,7896.00),
 		 (943,'S',null,6328.00),
@@ -1045,7 +1045,7 @@
 		 (948,'S',null,7893.00),
 		 (949,'S',null,13098.00),
 		 (950,'S',null,5027.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (951,'S',null,2134.00),
 		 (952,'S',null,5704.90),
 		 (953,'S',null,8034.00),
@@ -1056,7 +1056,7 @@
 		 (958,'S',null,6345.00),
 		 (959,'S',null,6349.00),
 		 (960,'S',null,8376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (961,'S',null,5827.00),
 		 (962,'S',null,4000.00),
 		 (963,'S',null,5172.50),
@@ -1067,7 +1067,7 @@
 		 (968,'S',null,5034.00),
 		 (969,'S',null,8345.00),
 		 (970,'S',null,6543.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (971,'S',null,5617.00),
 		 (972,'S',null,8256.00),
 		 (973,'S',null,6172.50),
@@ -1078,7 +1078,7 @@
 		 (978,'S',null,5488.00),
 		 (979,'S',null,4500.00),
 		 (980,'S',null,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (981,'S',null,3129.00),
 		 (982,'S',null,7432.00),
 		 (983,'S',null,3934.00),
@@ -1089,7 +1089,7 @@
 		 (988,'S',null,8354.00),
 		 (989,'S',null,3669.00),
 		 (990,'S',null,3402.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (991,'S',null,6845.00),
 		 (992,'S',null,3285.00),
 		 (993,'S',null,7965.00),
@@ -1100,7 +1100,7 @@
 		 (998,'S',null,5617.00),
 		 (999,'S',null,7265.00),
 		 (1000,'S',null,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1001,'S',null,3725.00),
 		 (1002,'S',null,821.00),
 		 (1003,'S',null,5567.00),
@@ -1111,7 +1111,7 @@
 		 (1008,'S',null,3910.00),
 		 (1009,'S',null,168.00),
 		 (1010,'S',null,7746.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1011,'S',null,3154.00),
 		 (1012,'S',null,987.00),
 		 (1013,'S',null,2458.00),
@@ -1122,7 +1122,7 @@
 		 (1018,'S',null,5432.00),
 		 (1019,'S',null,2894.00),
 		 (1020,'S',null,6934.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1021,'S',null,3965.00),
 		 (1022,'S',null,3918.00),
 		 (1023,'S',null,987.00),
@@ -1133,7 +1133,7 @@
 		 (1028,'S',null,5567.00),
 		 (1029,'S',null,2891.00),
 		 (1030,'S',null,7649.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1031,'S',null,3375.00),
 		 (1032,'S',null,6932.00),
 		 (1033,'S',null,4721.00),
@@ -1144,7 +1144,7 @@
 		 (1038,'S',null,5294.00),
 		 (1039,'S',null,2376.00),
 		 (1040,'S',null,987.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1041,'S',null,7393.00),
 		 (1042,'S',null,6029.00),
 		 (1043,'S',null,5567.00),
@@ -1155,7 +1155,7 @@
 		 (1048,'S',null,6522.00),
 		 (1049,'S',null,4137.00),
 		 (1050,'S',null,7776.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1051,'S',null,4512.00),
 		 (1052,'S',null,6210.00),
 		 (1053,'S',null,3725.00),
@@ -1166,7 +1166,7 @@
 		 (1058,'S',null,2893.00),
 		 (1059,'S',null,7503.00),
 		 (1060,'S',null,6937.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1061,'S',null,5061.00),
 		 (1062,'S',null,3911.00),
 		 (1063,'S',null,4127.00),
@@ -1177,7 +1177,7 @@
 		 (1068,'S',null,5076.00),
 		 (1069,'S',null,987.00),
 		 (1070,'S',null,7196.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1071,'S',null,5296.00),
 		 (1072,'S',null,5568.00),
 		 (1073,'S',null,2023.00),
@@ -1188,7 +1188,7 @@
 		 (1078,'S',null,3911.00),
 		 (1079,'S',null,5781.00),
 		 (1080,'S',null,5029.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1081,'S',null,4185.00),
 		 (1082,'S',null,6234.00),
 		 (1083,'S',null,987.00),
@@ -1199,7 +1199,7 @@
 		 (1088,'S',null,3911.00),
 		 (1089,'S',null,5568.00),
 		 (1090,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1091,'S',null,2025.00),
 		 (1092,'S',null,3178.00),
 		 (1093,'S',null,6947.00),
@@ -1210,7 +1210,7 @@
 		 (1098,'S',null,5297.00),
 		 (1099,'S',null,4197.00),
 		 (1100,'S',null,5058.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1101,'S',null,987.00),
 		 (1102,'S',null,7999.00),
 		 (1103,'S',null,7896.00),
@@ -1221,7 +1221,7 @@
 		 (1108,'S',null,3938.00),
 		 (1109,'S',null,7652.00),
 		 (1110,'S',null,3912.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1111,'S',null,2896.00),
 		 (1112,'S',null,5297.00),
 		 (1113,'S',null,4197.00),
@@ -1232,7 +1232,7 @@
 		 (1118,'S',null,3938.00),
 		 (1119,'S',null,2028.00),
 		 (1120,'S',null,3179.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1121,'S',null,6934.00),
 		 (1122,'S',null,3939.00),
 		 (1123,'S',null,7652.00),
@@ -1243,7 +1243,7 @@
 		 (1128,'S',null,5058.00),
 		 (1129,'S',null,987.00),
 		 (1130,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1131,'S',null,7896.00),
 		 (1132,'S',null,3938.00),
 		 (1133,'S',null,2030.00),
@@ -1254,7 +1254,7 @@
 		 (1138,'S',null,3913.00),
 		 (1139,'S',null,2898.00),
 		 (1140,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1141,'S',null,4503.00),
 		 (1142,'S',null,5058.00),
 		 (1143,'S',null,987.00),
@@ -1265,7 +1265,7 @@
 		 (1148,'S',null,3181.00),
 		 (1149,'S',null,6940.00),
 		 (1150,'S',null,3940.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1151,'S',null,7652.00),
 		 (1152,'S',null,3913.00),
 		 (1153,'S',null,2899.00),
@@ -1276,7 +1276,7 @@
 		 (1158,'S',null,7999.00),
 		 (1159,'S',null,7896.00),
 		 (1160,'S',null,3938.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1161,'S',null,2034.00),
 		 (1162,'S',null,3182.00),
 		 (1163,'S',null,6943.00),
@@ -1287,7 +1287,7 @@
 		 (1168,'S',null,5297.00),
 		 (1169,'S',null,4509.00),
 		 (1170,'S',null,5061.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1171,'S',null,987.00),
 		 (1172,'S',null,7999.00),
 		 (1173,'S',null,7896.00),
@@ -1298,7 +1298,7 @@
 		 (1178,'S',null,3942.00),
 		 (1179,'S',null,7652.00),
 		 (1180,'S',null,3913.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1181,'S',null,2901.00),
 		 (1182,'S',null,5297.00),
 		 (1183,'S',null,4512.00),
@@ -1309,7 +1309,7 @@
 		 (1188,'S',null,3938.00),
 		 (1189,'S',null,2039.00),
 		 (1190,'S',null,3184.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1191,'S',null,6949.00),
 		 (1192,'S',null,3943.00),
 		 (1193,'S',null,7652.00),
@@ -1320,7 +1320,7 @@
 		 (1198,'S',null,5061.00),
 		 (1199,'S',null,987.00),
 		 (1200,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1201,'S',null,2145.00),
 		 (1202,'S',null,5487.00),
 		 (1203,'S',null,2798.00),
@@ -1331,7 +1331,7 @@
 		 (1208,'S',null,2241.00),
 		 (1209,'S',null,4167.00),
 		 (1210,'S',null,3017.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1211,'S',null,950.00),
 		 (1212,'S',null,5379.00),
 		 (1213,'S',null,5802.00),
@@ -1342,7 +1342,7 @@
 		 (1218,'S',null,2913.00),
 		 (1219,'S',null,2274.00),
 		 (1220,'S',null,2556.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1221,'S',null,400.00),
 		 (1222,'S',null,3600.00),
 		 (1223,'S',null,4932.00),
@@ -1353,7 +1353,7 @@
 		 (1228,'S',null,2713.00),
 		 (1229,'S',null,3280.00),
 		 (1230,'S',null,2757.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1231,'S',null,4152.00),
 		 (1232,'S',null,5085.00),
 		 (1233,'S',null,3260.00),
@@ -1364,7 +1364,7 @@
 		 (1238,'S',null,2095.00),
 		 (1239,'S',null,5154.00),
 		 (1240,'S',null,2376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1241,'S',null,4701.00),
 		 (1242,'S',null,3290.00),
 		 (1243,'S',null,5316.00),
@@ -1375,7 +1375,7 @@
 		 (1248,'S',null,2453.00),
 		 (1249,'S',null,2454.00),
 		 (1250,'S',null,4737.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1251,'S',null,4998.00),
 		 (1252,'S',null,3042.00),
 		 (1253,'S',null,3013.00),
@@ -1386,7 +1386,7 @@
 		 (1258,'S',null,2829.00),
 		 (1259,'S',null,2441.00),
 		 (1260,'S',null,3615.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1261,'S',null,5001.00),
 		 (1262,'S',null,2503.00),
 		 (1263,'S',null,2763.00),
@@ -1397,7 +1397,7 @@
 		 (1268,'S',null,2277.00),
 		 (1269,'S',null,5847.00),
 		 (1270,'S',null,3111.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1271,'S',null,2795.00),
 		 (1272,'S',null,2559.00),
 		 (1273,'S',null,4830.00),
@@ -1408,7 +1408,7 @@
 		 (1278,'S',null,5004.00),
 		 (1279,'S',null,5004.00),
 		 (1280,'S',null,5733.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1281,'S',null,2823.00),
 		 (1282,'S',null,2294.00),
 		 (1283,'S',null,3136.00),
@@ -1419,7 +1419,7 @@
 		 (1288,'S',null,2977.00),
 		 (1289,'S',null,3194.00),
 		 (1290,'S',null,3268.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1291,'S',null,2919.00),
 		 (1292,'S',null,2434.00),
 		 (1293,'S',null,3054.00),
@@ -1430,7 +1430,7 @@
 		 (1298,'S',null,4860.00),
 		 (1299,'S',null,2946.00),
 		 (1300,'S',null,2165.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1301,'S',null,2830.00),
 		 (1302,'S',null,4080.00),
 		 (1303,'S',null,3147.00),
@@ -1441,7 +1441,7 @@
 		 (1308,'S',null,5445.00),
 		 (1309,'S',null,4851.00),
 		 (1310,'S',null,4086.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1311,'S',null,4515.00),
 		 (1312,'S',null,2184.00),
 		 (1313,'S',null,2347.00),
@@ -1452,7 +1452,7 @@
 		 (1318,'S',null,2089.00),
 		 (1319,'S',null,3215.00),
 		 (1320,'S',null,2574.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1321,'S',null,2990.00),
 		 (1322,'S',null,3036.00),
 		 (1323,'S',null,4146.00),
@@ -1463,7 +1463,7 @@
 		 (1328,'S',null,5277.00),
 		 (1329,'S',null,2120.00),
 		 (1330,'S',null,4182.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1331,'S',null,3118.00),
 		 (1332,'S',null,2851.00),
 		 (1333,'S',null,4893.00),
@@ -1474,7 +1474,7 @@
 		 (1338,'S',null,2654.00),
 		 (1339,'S',null,3075.00),
 		 (1340,'S',null,5703.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1341,'S',null,4839.00),
 		 (1342,'S',null,3078.00),
 		 (1343,'S',null,2272.00),
@@ -1485,7 +1485,7 @@
 		 (1348,'S',null,5547.00),
 		 (1349,'S',null,4047.00),
 		 (1350,'S',null,2080.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1351,'S',null,2916.00),
 		 (1352,'S',null,2172.00),
 		 (1353,'S',null,2457.00),
@@ -1496,7 +1496,7 @@
 		 (1358,'S',null,5790.00),
 		 (1359,'S',null,3124.00),
 		 (1360,'S',null,5916.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1361,'S',null,2848.00),
 		 (1362,'S',null,3062.00),
 		 (1363,'S',null,2909.00),
@@ -1507,7 +1507,7 @@
 		 (1368,'S',null,3046.00),
 		 (1369,'S',null,5160.00),
 		 (1370,'S',null,3109.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1371,'S',null,3070.00),
 		 (1372,'S',null,2626.00),
 		 (1373,'S',null,5343.00),
@@ -1518,7 +1518,7 @@
 		 (1378,'S',null,2014.00),
 		 (1379,'S',null,2728.00),
 		 (1380,'S',null,5226.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1381,'S',null,3072.00),
 		 (1382,'S',null,3038.00),
 		 (1383,'S',null,4968.00),
@@ -1529,7 +1529,7 @@
 		 (1388,'S',null,2233.00),
 		 (1389,'S',null,2303.00),
 		 (1390,'S',null,3075.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1391,'S',null,2731.00),
 		 (1392,'S',null,3199.00),
 		 (1393,'S',null,2863.00),
@@ -1540,7 +1540,7 @@
 		 (1398,'S',null,2781.00),
 		 (1399,'S',null,3127.00),
 		 (1400,'S',null,5539.30);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1401,'S',null,6824.00),
 		 (1402,'S',null,4913.00),
 		 (1403,'S',null,2167.00),
@@ -1551,7 +1551,7 @@
 		 (1408,'S',null,14567.00),
 		 (1409,'S',null,6487.00),
 		 (1410,'S',null,3267.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1411,'S',null,6003.00),
 		 (1412,'S',null,7745.00),
 		 (1413,'S',null,6321.00),
@@ -1562,7 +1562,7 @@
 		 (1418,'S',null,7500.00),
 		 (1419,'S',null,3012.00),
 		 (1420,'S',null,8372.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1421,'S',null,5112.00),
 		 (1422,'S',null,4062.00),
 		 (1423,'S',null,2083.00),
@@ -1573,7 +1573,7 @@
 		 (1428,'S',null,4077.00),
 		 (1429,'S',null,4601.00),
 		 (1430,'S',null,5300.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1431,'S',null,2345.00),
 		 (1432,'S',null,5211.50),
 		 (1433,'S',null,7932.00),
@@ -1584,7 +1584,7 @@
 		 (1438,'S',null,6894.00),
 		 (1439,'S',null,3369.00),
 		 (1440,'S',null,6339.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1441,'S',null,5438.00),
 		 (1442,'S',null,7896.00),
 		 (1443,'S',null,6328.00),
@@ -1595,7 +1595,7 @@
 		 (1448,'S',null,7893.00),
 		 (1449,'S',null,13098.00),
 		 (1450,'S',null,5027.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1451,'S',null,2134.00),
 		 (1452,'S',null,5704.90),
 		 (1453,'S',null,8034.00),
@@ -1606,7 +1606,7 @@
 		 (1458,'S',null,6345.00),
 		 (1459,'S',null,6349.00),
 		 (1460,'S',null,8376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1461,'S',null,5827.00),
 		 (1462,'S',null,4000.00),
 		 (1463,'S',null,5172.50),
@@ -1617,7 +1617,7 @@
 		 (1468,'S',null,5034.00),
 		 (1469,'S',null,8345.00),
 		 (1470,'S',null,6543.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1471,'S',null,5617.00),
 		 (1472,'S',null,8256.00),
 		 (1473,'S',null,6172.50),
@@ -1628,7 +1628,7 @@
 		 (1478,'S',null,5488.00),
 		 (1479,'S',null,4500.00),
 		 (1480,'S',null,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1481,'S',null,3129.00),
 		 (1482,'S',null,7432.00),
 		 (1483,'S',null,3934.00),
@@ -1639,7 +1639,7 @@
 		 (1488,'S',null,8354.00),
 		 (1489,'S',null,3669.00),
 		 (1490,'S',null,3402.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1491,'S',null,6845.00),
 		 (1492,'S',null,3285.00),
 		 (1493,'S',null,7965.00),
@@ -1650,7 +1650,7 @@
 		 (1498,'S',null,5617.00),
 		 (1499,'S',null,7265.00),
 		 (1500,'S',null,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1501,'S',null,3725.00),
 		 (1502,'S',null,821.00),
 		 (1503,'S',null,5567.00),
@@ -1661,7 +1661,7 @@
 		 (1508,'S',null,3910.00),
 		 (1509,'S',null,168.00),
 		 (1510,'S',null,7746.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1511,'S',null,3154.00),
 		 (1512,'S',null,987.00),
 		 (1513,'S',null,2458.00),
@@ -1672,7 +1672,7 @@
 		 (1518,'S',null,5432.00),
 		 (1519,'S',null,2894.00),
 		 (1520,'S',null,6934.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1521,'S',null,3965.00),
 		 (1522,'S',null,3918.00),
 		 (1523,'S',null,987.00),
@@ -1683,7 +1683,7 @@
 		 (1528,'S',null,5567.00),
 		 (1529,'S',null,2891.00),
 		 (1530,'S',null,7649.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1531,'S',null,3375.00),
 		 (1532,'S',null,6932.00),
 		 (1533,'S',null,4721.00),
@@ -1694,7 +1694,7 @@
 		 (1538,'S',null,5294.00),
 		 (1539,'S',null,2376.00),
 		 (1540,'S',null,987.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1541,'S',null,7393.00),
 		 (1542,'S',null,6029.00),
 		 (1543,'S',null,5567.00),
@@ -1705,7 +1705,7 @@
 		 (1548,'S',null,6522.00),
 		 (1549,'S',null,4137.00),
 		 (1550,'S',null,7776.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1551,'S',null,4512.00),
 		 (1552,'S',null,6210.00),
 		 (1553,'S',null,3725.00),
@@ -1716,7 +1716,7 @@
 		 (1558,'S',null,2893.00),
 		 (1559,'S',null,7503.00),
 		 (1560,'S',null,6937.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1561,'S',null,5061.00),
 		 (1562,'S',null,3911.00),
 		 (1563,'S',null,4127.00),
@@ -1727,7 +1727,7 @@
 		 (1568,'S',null,5076.00),
 		 (1569,'S',null,987.00),
 		 (1570,'S',null,7196.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1571,'S',null,5296.00),
 		 (1572,'S',null,5568.00),
 		 (1573,'S',null,2023.00),
@@ -1738,7 +1738,7 @@
 		 (1578,'S',null,3911.00),
 		 (1579,'S',null,5781.00),
 		 (1580,'S',null,5029.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1581,'S',null,4185.00),
 		 (1582,'S',null,6234.00),
 		 (1583,'S',null,987.00),
@@ -1749,7 +1749,7 @@
 		 (1588,'S',null,3911.00),
 		 (1589,'S',null,5568.00),
 		 (1590,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1591,'S',null,2025.00),
 		 (1592,'S',null,3178.00),
 		 (1593,'S',null,6947.00),
@@ -1760,7 +1760,7 @@
 		 (1598,'S',null,5297.00),
 		 (1599,'S',null,4197.00),
 		 (1600,'S',null,5058.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1601,'S',null,987.00),
 		 (1602,'S',null,7999.00),
 		 (1603,'S',null,7896.00),
@@ -1771,7 +1771,7 @@
 		 (1608,'S',null,3938.00),
 		 (1609,'S',null,7652.00),
 		 (1610,'S',null,3912.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1611,'S',null,2896.00),
 		 (1612,'S',null,5297.00),
 		 (1613,'S',null,4197.00),
@@ -1782,7 +1782,7 @@
 		 (1618,'S',null,3938.00),
 		 (1619,'S',null,2028.00),
 		 (1620,'S',null,3179.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1621,'S',null,6934.00),
 		 (1622,'S',null,3939.00),
 		 (1623,'S',null,7652.00),
@@ -1793,7 +1793,7 @@
 		 (1628,'S',null,5058.00),
 		 (1629,'S',null,987.00),
 		 (1630,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1631,'S',null,7896.00),
 		 (1632,'S',null,3938.00),
 		 (1633,'S',null,2030.00),
@@ -1804,7 +1804,7 @@
 		 (1638,'S',null,3913.00),
 		 (1639,'S',null,2898.00),
 		 (1640,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1641,'S',null,4503.00),
 		 (1642,'S',null,5058.00),
 		 (1643,'S',null,987.00),
@@ -1815,7 +1815,7 @@
 		 (1648,'S',null,3181.00),
 		 (1649,'S',null,6940.00),
 		 (1650,'S',null,3940.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1651,'S',null,7652.00),
 		 (1652,'S',null,3913.00),
 		 (1653,'S',null,2899.00),
@@ -1826,7 +1826,7 @@
 		 (1658,'S',null,7999.00),
 		 (1659,'S',null,7896.00),
 		 (1660,'S',null,3938.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1661,'S',null,2034.00),
 		 (1662,'S',null,3182.00),
 		 (1663,'S',null,6943.00),
@@ -1837,7 +1837,7 @@
 		 (1668,'S',null,5297.00),
 		 (1669,'S',null,4509.00),
 		 (1670,'S',null,5061.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1671,'S',null,987.00),
 		 (1672,'S',null,7999.00),
 		 (1673,'S',null,7896.00),
@@ -1848,7 +1848,7 @@
 		 (1678,'S',null,3942.00),
 		 (1679,'S',null,7652.00),
 		 (1680,'S',null,3913.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1681,'S',null,2901.00),
 		 (1682,'S',null,5297.00),
 		 (1683,'S',null,4512.00),
@@ -1859,7 +1859,7 @@
 		 (1688,'S',null,3938.00),
 		 (1689,'S',null,2039.00),
 		 (1690,'S',null,3184.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1691,'S',null,6949.00),
 		 (1692,'S',null,3943.00),
 		 (1693,'S',null,7652.00),
@@ -1870,7 +1870,7 @@
 		 (1698,'S',null,5061.00),
 		 (1699,'S',null,987.00),
 		 (1700,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1701,'S',null,2145.00),
 		 (1702,'S',null,5487.00),
 		 (1703,'S',null,2798.00),
@@ -1881,7 +1881,7 @@
 		 (1708,'S',null,2241.00),
 		 (1709,'S',null,4167.00),
 		 (1710,'S',null,3017.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1711,'S',null,950.00),
 		 (1712,'S',null,5379.00),
 		 (1713,'S',null,5802.00),
@@ -1892,7 +1892,7 @@
 		 (1718,'S',null,2913.00),
 		 (1719,'S',null,2274.00),
 		 (1720,'S',null,2556.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1721,'S',null,400.00),
 		 (1722,'S',null,3600.00),
 		 (1723,'S',null,4932.00),
@@ -1903,7 +1903,7 @@
 		 (1728,'S',null,2713.00),
 		 (1729,'S',null,3280.00),
 		 (1730,'S',null,2757.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1731,'S',null,4152.00),
 		 (1732,'S',null,5085.00),
 		 (1733,'S',null,3260.00),
@@ -1914,7 +1914,7 @@
 		 (1738,'S',null,2095.00),
 		 (1739,'S',null,5154.00),
 		 (1740,'S',null,2376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1741,'S',null,4701.00),
 		 (1742,'S',null,3290.00),
 		 (1743,'S',null,5316.00),
@@ -1925,7 +1925,7 @@
 		 (1748,'S',null,2453.00),
 		 (1749,'S',null,2454.00),
 		 (1750,'S',null,4737.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1751,'S',null,4998.00),
 		 (1752,'S',null,3042.00),
 		 (1753,'S',null,3013.00),
@@ -1936,7 +1936,7 @@
 		 (1758,'S',null,2829.00),
 		 (1759,'S',null,2441.00),
 		 (1760,'S',null,3615.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1761,'S',null,5001.00),
 		 (1762,'S',null,2503.00),
 		 (1763,'S',null,2763.00),
@@ -1947,7 +1947,7 @@
 		 (1768,'S',null,2277.00),
 		 (1769,'S',null,5847.00),
 		 (1770,'S',null,3111.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1771,'S',null,2795.00),
 		 (1772,'S',null,2559.00),
 		 (1773,'S',null,4830.00),
@@ -1958,7 +1958,7 @@
 		 (1778,'S',null,5004.00),
 		 (1779,'S',null,5004.00),
 		 (1780,'S',null,5733.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1781,'S',null,2823.00),
 		 (1782,'S',null,2294.00),
 		 (1783,'S',null,3136.00),
@@ -1969,7 +1969,7 @@
 		 (1788,'S',null,2977.00),
 		 (1789,'S',null,3194.00),
 		 (1790,'S',null,3268.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1791,'S',null,2919.00),
 		 (1792,'S',null,2434.00),
 		 (1793,'S',null,3054.00),
@@ -1980,7 +1980,7 @@
 		 (1798,'S',null,4860.00),
 		 (1799,'S',null,2946.00),
 		 (1800,'S',null,2165.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1801,'S',null,2830.00),
 		 (1802,'S',null,4080.00),
 		 (1803,'S',null,3147.00),
@@ -1991,7 +1991,7 @@
 		 (1808,'S',null,5445.00),
 		 (1809,'S',null,4851.00),
 		 (1810,'S',null,4086.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1811,'S',null,4515.00),
 		 (1812,'S',null,2184.00),
 		 (1813,'S',null,2347.00),
@@ -2002,7 +2002,7 @@
 		 (1818,'S',null,2089.00),
 		 (1819,'S',null,3215.00),
 		 (1820,'S',null,2574.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1821,'S',null,2990.00),
 		 (1822,'S',null,3036.00),
 		 (1823,'S',null,4146.00),
@@ -2013,7 +2013,7 @@
 		 (1828,'S',null,5277.00),
 		 (1829,'S',null,2120.00),
 		 (1830,'S',null,4182.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1831,'S',null,3118.00),
 		 (1832,'S',null,2851.00),
 		 (1833,'S',null,4893.00),
@@ -2024,7 +2024,7 @@
 		 (1838,'S',null,2654.00),
 		 (1839,'S',null,3075.00),
 		 (1840,'S',null,5703.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1841,'S',null,4839.00),
 		 (1842,'S',null,3078.00),
 		 (1843,'S',null,2272.00),
@@ -2035,7 +2035,7 @@
 		 (1848,'S',null,5547.00),
 		 (1849,'S',null,4047.00),
 		 (1850,'S',null,2080.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1851,'S',null,2916.00),
 		 (1852,'S',null,2172.00),
 		 (1853,'S',null,2457.00),
@@ -2046,7 +2046,7 @@
 		 (1858,'S',null,5790.00),
 		 (1859,'S',null,3124.00),
 		 (1860,'S',null,5916.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1861,'S',null,2848.00),
 		 (1862,'S',null,3062.00),
 		 (1863,'S',null,2909.00),
@@ -2057,7 +2057,7 @@
 		 (1868,'S',null,3046.00),
 		 (1869,'S',null,5160.00),
 		 (1870,'S',null,3109.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1871,'S',null,3070.00),
 		 (1872,'S',null,2626.00),
 		 (1873,'S',null,5343.00),
@@ -2068,7 +2068,7 @@
 		 (1878,'S',null,2014.00),
 		 (1879,'S',null,2728.00),
 		 (1880,'S',null,5226.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1881,'S',null,3072.00),
 		 (1882,'S',null,3038.00),
 		 (1883,'S',null,4968.00),
@@ -2079,7 +2079,7 @@
 		 (1888,'S',null,2233.00),
 		 (1889,'S',null,2303.00),
 		 (1890,'S',null,3075.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1891,'S',null,2731.00),
 		 (1892,'S',null,3199.00),
 		 (1893,'S',null,2863.00),
@@ -2090,7 +2090,7 @@
 		 (1898,'S',null,2781.00),
 		 (1899,'S',null,3127.00),
 		 (1900,'S',null,5539.30);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1901,'S',null,6824.00),
 		 (1902,'S',null,4913.00),
 		 (1903,'S',null,2167.00),
@@ -2101,7 +2101,7 @@
 		 (1908,'S',null,14567.00),
 		 (1909,'S',null,6487.00),
 		 (1910,'S',null,3267.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1911,'S',null,6003.00),
 		 (1912,'S',null,7745.00),
 		 (1913,'S',null,6321.00),
@@ -2112,7 +2112,7 @@
 		 (1918,'S',null,7500.00),
 		 (1919,'S',null,3012.00),
 		 (1920,'S',null,8372.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1921,'S',null,5112.00),
 		 (1922,'S',null,4062.00),
 		 (1923,'S',null,2083.00),
@@ -2123,7 +2123,7 @@
 		 (1928,'S',null,4077.00),
 		 (1929,'S',null,4601.00),
 		 (1930,'S',null,5300.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1931,'S',null,2345.00),
 		 (1932,'S',null,5211.50),
 		 (1933,'S',null,7932.00),
@@ -2134,7 +2134,7 @@
 		 (1938,'S',null,6894.00),
 		 (1939,'S',null,3369.00),
 		 (1940,'S',null,6339.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1941,'S',null,5438.00),
 		 (1942,'S',null,7896.00),
 		 (1943,'S',null,6328.00),
@@ -2145,7 +2145,7 @@
 		 (1948,'S',null,7893.00),
 		 (1949,'S',null,13098.00),
 		 (1950,'S',null,5027.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1951,'S',null,2134.00),
 		 (1952,'S',null,5704.90),
 		 (1953,'S',null,8034.00),
@@ -2156,7 +2156,7 @@
 		 (1958,'S',null,6345.00),
 		 (1959,'S',null,6349.00),
 		 (1960,'S',null,8376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1961,'S',null,5827.00),
 		 (1962,'S',null,4000.00),
 		 (1963,'S',null,5172.50),
@@ -2167,7 +2167,7 @@
 		 (1968,'S',null,5034.00),
 		 (1969,'S',null,8345.00),
 		 (1970,'S',null,6543.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1971,'S',null,5617.00),
 		 (1972,'S',null,8256.00),
 		 (1973,'S',null,6172.50),
@@ -2178,7 +2178,7 @@
 		 (1978,'S',null,5488.00),
 		 (1979,'S',null,4500.00),
 		 (1980,'S',null,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1981,'S',null,3129.00),
 		 (1982,'S',null,7432.00),
 		 (1983,'S',null,3934.00),
@@ -2189,7 +2189,7 @@
 		 (1988,'S',null,8354.00),
 		 (1989,'S',null,3669.00),
 		 (1990,'S',null,3402.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (1991,'S',null,6845.00),
 		 (1992,'S',null,3285.00),
 		 (1993,'S',null,7965.00),
@@ -2200,7 +2200,7 @@
 		 (1998,'S',null,5617.00),
 		 (1999,'S',null,7265.00),
 		 (2000,'S',null,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2001,'S',null,3725.00),
 		 (2002,'S',null,821.00),
 		 (2003,'S',null,5567.00),
@@ -2211,7 +2211,7 @@
 		 (2008,'S',null,3910.00),
 		 (2009,'S',null,168.00),
 		 (2010,'S',null,7746.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2011,'S',null,3154.00),
 		 (2012,'S',null,987.00),
 		 (2013,'S',null,2458.00),
@@ -2222,7 +2222,7 @@
 		 (2018,'S',null,5432.00),
 		 (2019,'S',null,2894.00),
 		 (2020,'S',null,6934.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2021,'S',null,3965.00),
 		 (2022,'S',null,3918.00),
 		 (2023,'S',null,987.00),
@@ -2233,7 +2233,7 @@
 		 (2028,'S',null,5567.00),
 		 (2029,'S',null,2891.00),
 		 (2030,'S',null,7649.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2031,'S',null,3375.00),
 		 (2032,'S',null,6932.00),
 		 (2033,'S',null,4721.00),
@@ -2244,7 +2244,7 @@
 		 (2038,'S',null,5294.00),
 		 (2039,'S',null,2376.00),
 		 (2040,'S',null,987.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2041,'S',null,7393.00),
 		 (2042,'S',null,6029.00),
 		 (2043,'S',null,5567.00),
@@ -2255,7 +2255,7 @@
 		 (2048,'S',null,6522.00),
 		 (2049,'S',null,4137.00),
 		 (2050,'S',null,7776.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2051,'S',null,4512.00),
 		 (2052,'S',null,6210.00),
 		 (2053,'S',null,3725.00),
@@ -2266,7 +2266,7 @@
 		 (2058,'S',null,2893.00),
 		 (2059,'S',null,7503.00),
 		 (2060,'S',null,6937.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2061,'S',null,5061.00),
 		 (2062,'S',null,3911.00),
 		 (2063,'S',null,4127.00),
@@ -2277,7 +2277,7 @@
 		 (2068,'S',null,5076.00),
 		 (2069,'S',null,987.00),
 		 (2070,'S',null,7196.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2071,'S',null,5296.00),
 		 (2072,'S',null,5568.00),
 		 (2073,'S',null,2023.00),
@@ -2288,7 +2288,7 @@
 		 (2078,'S',null,3911.00),
 		 (2079,'S',null,5781.00),
 		 (2080,'S',null,5029.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2081,'S',null,4185.00),
 		 (2082,'S',null,6234.00),
 		 (2083,'S',null,987.00),
@@ -2299,7 +2299,7 @@
 		 (2088,'S',null,3911.00),
 		 (2089,'S',null,5568.00),
 		 (2090,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2091,'S',null,2025.00),
 		 (2092,'S',null,3178.00),
 		 (2093,'S',null,6947.00),
@@ -2310,7 +2310,7 @@
 		 (2098,'S',null,5297.00),
 		 (2099,'S',null,4197.00),
 		 (2100,'S',null,5058.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2101,'S',null,987.00),
 		 (2102,'S',null,7999.00),
 		 (2103,'S',null,7896.00),
@@ -2321,7 +2321,7 @@
 		 (2108,'S',null,3938.00),
 		 (2109,'S',null,7652.00),
 		 (2110,'S',null,3912.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2111,'S',null,2896.00),
 		 (2112,'S',null,5297.00),
 		 (2113,'S',null,4197.00),
@@ -2332,7 +2332,7 @@
 		 (2118,'S',null,3938.00),
 		 (2119,'S',null,2028.00),
 		 (2120,'S',null,3179.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2121,'S',null,6934.00),
 		 (2122,'S',null,3939.00),
 		 (2123,'S',null,7652.00),
@@ -2343,7 +2343,7 @@
 		 (2128,'S',null,5058.00),
 		 (2129,'S',null,987.00),
 		 (2130,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2131,'S',null,7896.00),
 		 (2132,'S',null,3938.00),
 		 (2133,'S',null,2030.00),
@@ -2354,7 +2354,7 @@
 		 (2138,'S',null,3913.00),
 		 (2139,'S',null,2898.00),
 		 (2140,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2141,'S',null,4503.00),
 		 (2142,'S',null,5058.00),
 		 (2143,'S',null,987.00),
@@ -2365,7 +2365,7 @@
 		 (2148,'S',null,3181.00),
 		 (2149,'S',null,6940.00),
 		 (2150,'S',null,3940.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2151,'S',null,7652.00),
 		 (2152,'S',null,3913.00),
 		 (2153,'S',null,2899.00),
@@ -2376,7 +2376,7 @@
 		 (2158,'S',null,7999.00),
 		 (2159,'S',null,7896.00),
 		 (2160,'S',null,3938.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2161,'S',null,2034.00),
 		 (2162,'S',null,3182.00),
 		 (2163,'S',null,6943.00),
@@ -2387,7 +2387,7 @@
 		 (2168,'S',null,5297.00),
 		 (2169,'S',null,4509.00),
 		 (2170,'S',null,5061.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2171,'S',null,987.00),
 		 (2172,'S',null,7999.00),
 		 (2173,'S',null,7896.00),
@@ -2398,7 +2398,7 @@
 		 (2178,'S',null,3942.00),
 		 (2179,'S',null,7652.00),
 		 (2180,'S',null,3913.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2181,'S',null,2901.00),
 		 (2182,'S',null,5297.00),
 		 (2183,'S',null,4512.00),
@@ -2409,7 +2409,7 @@
 		 (2188,'S',null,3938.00),
 		 (2189,'S',null,2039.00),
 		 (2190,'S',null,3184.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2191,'S',null,6949.00),
 		 (2192,'S',null,3943.00),
 		 (2193,'S',null,7652.00),
@@ -2420,7 +2420,7 @@
 		 (2198,'S',null,5061.00),
 		 (2199,'S',null,987.00),
 		 (2200,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2201,'S',null,2145.00),
 		 (2202,'S',null,5487.00),
 		 (2203,'S',null,2798.00),
@@ -2431,7 +2431,7 @@
 		 (2208,'S',null,2241.00),
 		 (2209,'S',null,4167.00),
 		 (2210,'S',null,3017.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2211,'S',null,950.00),
 		 (2212,'S',null,5379.00),
 		 (2213,'S',null,5802.00),
@@ -2442,7 +2442,7 @@
 		 (2218,'S',null,2913.00),
 		 (2219,'S',null,2274.00),
 		 (2220,'S',null,2556.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2221,'S',null,400.00),
 		 (2222,'S',null,3600.00),
 		 (2223,'S',null,4932.00),
@@ -2453,7 +2453,7 @@
 		 (2228,'S',null,2713.00),
 		 (2229,'S',null,3280.00),
 		 (2230,'S',null,2757.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2231,'S',null,4152.00),
 		 (2232,'S',null,5085.00),
 		 (2233,'S',null,3260.00),
@@ -2464,7 +2464,7 @@
 		 (2238,'S',null,2095.00),
 		 (2239,'S',null,5154.00),
 		 (2240,'S',null,2376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2241,'S',null,4701.00),
 		 (2242,'S',null,3290.00),
 		 (2243,'S',null,5316.00),
@@ -2475,7 +2475,7 @@
 		 (2248,'S',null,2453.00),
 		 (2249,'S',null,2454.00),
 		 (2250,'S',null,4737.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2251,'S',null,4998.00),
 		 (2252,'S',null,3042.00),
 		 (2253,'S',null,3013.00),
@@ -2486,7 +2486,7 @@
 		 (2258,'S',null,2829.00),
 		 (2259,'S',null,2441.00),
 		 (2260,'S',null,3615.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2261,'S',null,5001.00),
 		 (2262,'S',null,2503.00),
 		 (2263,'S',null,2763.00),
@@ -2497,7 +2497,7 @@
 		 (2268,'S',null,2277.00),
 		 (2269,'S',null,5847.00),
 		 (2270,'S',null,3111.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2271,'S',null,2795.00),
 		 (2272,'S',null,2559.00),
 		 (2273,'S',null,4830.00),
@@ -2508,7 +2508,7 @@
 		 (2278,'S',null,5004.00),
 		 (2279,'S',null,5004.00),
 		 (2280,'S',null,5733.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2281,'S',null,2823.00),
 		 (2282,'S',null,2294.00),
 		 (2283,'S',null,3136.00),
@@ -2519,7 +2519,7 @@
 		 (2288,'S',null,2977.00),
 		 (2289,'S',null,3194.00),
 		 (2290,'S',null,3268.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2291,'S',null,2919.00),
 		 (2292,'S',null,2434.00),
 		 (2293,'S',null,3054.00),
@@ -2530,7 +2530,7 @@
 		 (2298,'S',null,4860.00),
 		 (2299,'S',null,2946.00),
 		 (2300,'S',null,2165.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2301,'S',null,2830.00),
 		 (2302,'S',null,4080.00),
 		 (2303,'S',null,3147.00),
@@ -2541,7 +2541,7 @@
 		 (2308,'S',null,5445.00),
 		 (2309,'S',null,4851.00),
 		 (2310,'S',null,4086.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2311,'S',null,4515.00),
 		 (2312,'S',null,2184.00),
 		 (2313,'S',null,2347.00),
@@ -2552,7 +2552,7 @@
 		 (2318,'S',null,2089.00),
 		 (2319,'S',null,3215.00),
 		 (2320,'S',null,2574.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2321,'S',null,2990.00),
 		 (2322,'S',null,3036.00),
 		 (2323,'S',null,4146.00),
@@ -2563,7 +2563,7 @@
 		 (2328,'S',null,5277.00),
 		 (2329,'S',null,2120.00),
 		 (2330,'S',null,4182.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2331,'S',null,3118.00),
 		 (2332,'S',null,2851.00),
 		 (2333,'S',null,4893.00),
@@ -2574,7 +2574,7 @@
 		 (2338,'S',null,2654.00),
 		 (2339,'S',null,3075.00),
 		 (2340,'S',null,5703.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2341,'S',null,4839.00),
 		 (2342,'S',null,3078.00),
 		 (2343,'S',null,2272.00),
@@ -2585,7 +2585,7 @@
 		 (2348,'S',null,5547.00),
 		 (2349,'S',null,4047.00),
 		 (2350,'S',null,2080.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2351,'S',null,2916.00),
 		 (2352,'S',null,2172.00),
 		 (2353,'S',null,2457.00),
@@ -2596,7 +2596,7 @@
 		 (2358,'S',null,5790.00),
 		 (2359,'S',null,3124.00),
 		 (2360,'S',null,5916.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2361,'S',null,2848.00),
 		 (2362,'S',null,3062.00),
 		 (2363,'S',null,2909.00),
@@ -2607,7 +2607,7 @@
 		 (2368,'S',null,3046.00),
 		 (2369,'S',null,5160.00),
 		 (2370,'S',null,3109.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2371,'S',null,3070.00),
 		 (2372,'S',null,2626.00),
 		 (2373,'S',null,5343.00),
@@ -2618,7 +2618,7 @@
 		 (2378,'S',null,2014.00),
 		 (2379,'S',null,2728.00),
 		 (2380,'S',null,5226.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2381,'S',null,3072.00),
 		 (2382,'S',null,3038.00),
 		 (2383,'S',null,4968.00),
@@ -2629,7 +2629,7 @@
 		 (2388,'S',null,2233.00),
 		 (2389,'S',null,2303.00),
 		 (2390,'S',null,3075.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2391,'S',null,2731.00),
 		 (2392,'S',null,3199.00),
 		 (2393,'S',null,2863.00),
@@ -2640,7 +2640,7 @@
 		 (2398,'S',null,2781.00),
 		 (2399,'S',null,3127.00),
 		 (2400,'S',null,5539.30);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2401,'S',null,6824.00),
 		 (2402,'S',null,4913.00),
 		 (2403,'S',null,2167.00),
@@ -2651,7 +2651,7 @@
 		 (2408,'S',null,14567.00),
 		 (2409,'S',null,6487.00),
 		 (2410,'S',null,3267.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2411,'S',null,6003.00),
 		 (2412,'S',null,7745.00),
 		 (2413,'S',null,6321.00),
@@ -2662,7 +2662,7 @@
 		 (2418,'S',null,7500.00),
 		 (2419,'S',null,3012.00),
 		 (2420,'S',null,8372.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2421,'S',null,5112.00),
 		 (2422,'S',null,4062.00),
 		 (2423,'S',null,2083.00),
@@ -2673,7 +2673,7 @@
 		 (2428,'S',null,4077.00),
 		 (2429,'S',null,4601.00),
 		 (2430,'S',null,5300.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2431,'S',null,2345.00),
 		 (2432,'S',null,5211.50),
 		 (2433,'S',null,7932.00),
@@ -2684,7 +2684,7 @@
 		 (2438,'S',null,6894.00),
 		 (2439,'S',null,3369.00),
 		 (2440,'S',null,6339.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2441,'S',null,5438.00),
 		 (2442,'S',null,7896.00),
 		 (2443,'S',null,6328.00),
@@ -2695,7 +2695,7 @@
 		 (2448,'S',null,7893.00),
 		 (2449,'S',null,13098.00),
 		 (2450,'S',null,5027.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2451,'S',null,2134.00),
 		 (2452,'S',null,5704.90),
 		 (2453,'S',null,8034.00),
@@ -2706,7 +2706,7 @@
 		 (2458,'S',null,6345.00),
 		 (2459,'S',null,6349.00),
 		 (2460,'S',null,8376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2461,'S',null,5827.00),
 		 (2462,'S',null,4000.00),
 		 (2463,'S',null,5172.50),
@@ -2717,7 +2717,7 @@
 		 (2468,'S',null,5034.00),
 		 (2469,'S',null,8345.00),
 		 (2470,'S',null,6543.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2471,'S',null,5617.00),
 		 (2472,'S',null,8256.00),
 		 (2473,'S',null,6172.50),
@@ -2728,7 +2728,7 @@
 		 (2478,'S',null,5488.00),
 		 (2479,'S',null,4500.00),
 		 (2480,'S',null,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2481,'S',null,3129.00),
 		 (2482,'S',null,7432.00),
 		 (2483,'S',null,3934.00),
@@ -2739,7 +2739,7 @@
 		 (2488,'S',null,8354.00),
 		 (2489,'S',null,3669.00),
 		 (2490,'S',null,3402.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2491,'S',null,6845.00),
 		 (2492,'S',null,3285.00),
 		 (2493,'S',null,7965.00),
@@ -2750,7 +2750,7 @@
 		 (2498,'S',null,5617.00),
 		 (2499,'S',null,7265.00),
 		 (2500,'S',null,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2501,'S',null,3725.00),
 		 (2502,'S',null,821.00),
 		 (2503,'S',null,5567.00),
@@ -2761,7 +2761,7 @@
 		 (2508,'S',null,3910.00),
 		 (2509,'S',null,168.00),
 		 (2510,'S',null,7746.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2511,'S',null,3154.00),
 		 (2512,'S',null,987.00),
 		 (2513,'S',null,2458.00),
@@ -2772,7 +2772,7 @@
 		 (2518,'S',null,5432.00),
 		 (2519,'S',null,2894.00),
 		 (2520,'S',null,6934.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2521,'S',null,3965.00),
 		 (2522,'S',null,3918.00),
 		 (2523,'S',null,987.00),
@@ -2783,7 +2783,7 @@
 		 (2528,'S',null,5567.00),
 		 (2529,'S',null,2891.00),
 		 (2530,'S',null,7649.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2531,'S',null,3375.00),
 		 (2532,'S',null,6932.00),
 		 (2533,'S',null,4721.00),
@@ -2794,7 +2794,7 @@
 		 (2538,'S',null,5294.00),
 		 (2539,'S',null,2376.00),
 		 (2540,'S',null,987.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2541,'S',null,7393.00),
 		 (2542,'S',null,6029.00),
 		 (2543,'S',null,5567.00),
@@ -2805,7 +2805,7 @@
 		 (2548,'S',null,6522.00),
 		 (2549,'S',null,4137.00),
 		 (2550,'S',null,7776.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2551,'S',null,4512.00),
 		 (2552,'S',null,6210.00),
 		 (2553,'S',null,3725.00),
@@ -2816,7 +2816,7 @@
 		 (2558,'S',null,2893.00),
 		 (2559,'S',null,7503.00),
 		 (2560,'S',null,6937.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2561,'S',null,5061.00),
 		 (2562,'S',null,3911.00),
 		 (2563,'S',null,4127.00),
@@ -2827,7 +2827,7 @@
 		 (2568,'S',null,5076.00),
 		 (2569,'S',null,987.00),
 		 (2570,'S',null,7196.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2571,'S',null,5296.00),
 		 (2572,'S',null,5568.00),
 		 (2573,'S',null,2023.00),
@@ -2838,7 +2838,7 @@
 		 (2578,'S',null,3911.00),
 		 (2579,'S',null,5781.00),
 		 (2580,'S',null,5029.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2581,'S',null,4185.00),
 		 (2582,'S',null,6234.00),
 		 (2583,'S',null,987.00),
@@ -2849,7 +2849,7 @@
 		 (2588,'S',null,3911.00),
 		 (2589,'S',null,5568.00),
 		 (2590,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2591,'S',null,2025.00),
 		 (2592,'S',null,3178.00),
 		 (2593,'S',null,6947.00),
@@ -2860,7 +2860,7 @@
 		 (2598,'S',null,5297.00),
 		 (2599,'S',null,4197.00),
 		 (2600,'S',null,5058.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2601,'S',null,987.00),
 		 (2602,'S',null,7999.00),
 		 (2603,'S',null,7896.00),
@@ -2871,7 +2871,7 @@
 		 (2608,'S',null,3938.00),
 		 (2609,'S',null,7652.00),
 		 (2610,'S',null,3912.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2611,'S',null,2896.00),
 		 (2612,'S',null,5297.00),
 		 (2613,'S',null,4197.00),
@@ -2882,7 +2882,7 @@
 		 (2618,'S',null,3938.00),
 		 (2619,'S',null,2028.00),
 		 (2620,'S',null,3179.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2621,'S',null,6934.00),
 		 (2622,'S',null,3939.00),
 		 (2623,'S',null,7652.00),
@@ -2893,7 +2893,7 @@
 		 (2628,'S',null,5058.00),
 		 (2629,'S',null,987.00),
 		 (2630,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2631,'S',null,7896.00),
 		 (2632,'S',null,3938.00),
 		 (2633,'S',null,2030.00),
@@ -2904,7 +2904,7 @@
 		 (2638,'S',null,3913.00),
 		 (2639,'S',null,2898.00),
 		 (2640,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2641,'S',null,4503.00),
 		 (2642,'S',null,5058.00),
 		 (2643,'S',null,987.00),
@@ -2915,7 +2915,7 @@
 		 (2648,'S',null,3181.00),
 		 (2649,'S',null,6940.00),
 		 (2650,'S',null,3940.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2651,'S',null,7652.00),
 		 (2652,'S',null,3913.00),
 		 (2653,'S',null,2899.00),
@@ -2926,7 +2926,7 @@
 		 (2658,'S',null,7999.00),
 		 (2659,'S',null,7896.00),
 		 (2660,'S',null,3938.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2661,'S',null,2034.00),
 		 (2662,'S',null,3182.00),
 		 (2663,'S',null,6943.00),
@@ -2937,7 +2937,7 @@
 		 (2668,'S',null,5297.00),
 		 (2669,'S',null,4509.00),
 		 (2670,'S',null,5061.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2671,'S',null,987.00),
 		 (2672,'S',null,7999.00),
 		 (2673,'S',null,7896.00),
@@ -2948,7 +2948,7 @@
 		 (2678,'S',null,3942.00),
 		 (2679,'S',null,7652.00),
 		 (2680,'S',null,3913.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2681,'S',null,2901.00),
 		 (2682,'S',null,5297.00),
 		 (2683,'S',null,4512.00),
@@ -2959,7 +2959,7 @@
 		 (2688,'S',null,3938.00),
 		 (2689,'S',null,2039.00),
 		 (2690,'S',null,3184.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2691,'S',null,6949.00),
 		 (2692,'S',null,3943.00),
 		 (2693,'S',null,7652.00),
@@ -2970,7 +2970,7 @@
 		 (2698,'S',null,5061.00),
 		 (2699,'S',null,987.00),
 		 (2700,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2701,'S',null,2145.00),
 		 (2702,'S',null,5487.00),
 		 (2703,'S',null,2798.00),
@@ -2981,7 +2981,7 @@
 		 (2708,'S',null,2241.00),
 		 (2709,'S',null,4167.00),
 		 (2710,'S',null,3017.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2711,'S',null,950.00),
 		 (2712,'S',null,5379.00),
 		 (2713,'S',null,5802.00),
@@ -2992,7 +2992,7 @@
 		 (2718,'S',null,2913.00),
 		 (2719,'S',null,2274.00),
 		 (2720,'S',null,2556.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2721,'S',null,400.00),
 		 (2722,'S',null,3600.00),
 		 (2723,'S',null,4932.00),
@@ -3003,7 +3003,7 @@
 		 (2728,'S',null,2713.00),
 		 (2729,'S',null,3280.00),
 		 (2730,'S',null,2757.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2731,'S',null,4152.00),
 		 (2732,'S',null,5085.00),
 		 (2733,'S',null,3260.00),
@@ -3014,7 +3014,7 @@
 		 (2738,'S',null,2095.00),
 		 (2739,'S',null,5154.00),
 		 (2740,'S',null,2376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2741,'S',null,4701.00),
 		 (2742,'S',null,3290.00),
 		 (2743,'S',null,5316.00),
@@ -3025,7 +3025,7 @@
 		 (2748,'S',null,2453.00),
 		 (2749,'S',null,2454.00),
 		 (2750,'S',null,4737.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2751,'S',null,4998.00),
 		 (2752,'S',null,3042.00),
 		 (2753,'S',null,3013.00),
@@ -3036,7 +3036,7 @@
 		 (2758,'S',null,2829.00),
 		 (2759,'S',null,2441.00),
 		 (2760,'S',null,3615.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2761,'S',null,5001.00),
 		 (2762,'S',null,2503.00),
 		 (2763,'S',null,2763.00),
@@ -3047,7 +3047,7 @@
 		 (2768,'S',null,2277.00),
 		 (2769,'S',null,5847.00),
 		 (2770,'S',null,3111.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2771,'S',null,2795.00),
 		 (2772,'S',null,2559.00),
 		 (2773,'S',null,4830.00),
@@ -3058,7 +3058,7 @@
 		 (2778,'S',null,5004.00),
 		 (2779,'S',null,5004.00),
 		 (2780,'S',null,5733.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2781,'S',null,2823.00),
 		 (2782,'S',null,2294.00),
 		 (2783,'S',null,3136.00),
@@ -3069,7 +3069,7 @@
 		 (2788,'S',null,2977.00),
 		 (2789,'S',null,3194.00),
 		 (2790,'S',null,3268.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2791,'S',null,2919.00),
 		 (2792,'S',null,2434.00),
 		 (2793,'S',null,3054.00),
@@ -3080,7 +3080,7 @@
 		 (2798,'S',null,4860.00),
 		 (2799,'S',null,2946.00),
 		 (2800,'S',null,2165.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2801,'S',null,2830.00),
 		 (2802,'S',null,4080.00),
 		 (2803,'S',null,3147.00),
@@ -3091,7 +3091,7 @@
 		 (2808,'S',null,5445.00),
 		 (2809,'S',null,4851.00),
 		 (2810,'S',null,4086.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2811,'S',null,4515.00),
 		 (2812,'S',null,2184.00),
 		 (2813,'S',null,2347.00),
@@ -3102,7 +3102,7 @@
 		 (2818,'S',null,2089.00),
 		 (2819,'S',null,3215.00),
 		 (2820,'S',null,2574.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2821,'S',null,2990.00),
 		 (2822,'S',null,3036.00),
 		 (2823,'S',null,4146.00),
@@ -3113,7 +3113,7 @@
 		 (2828,'S',null,5277.00),
 		 (2829,'S',null,2120.00),
 		 (2830,'S',null,4182.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2831,'S',null,3118.00),
 		 (2832,'S',null,2851.00),
 		 (2833,'S',null,4893.00),
@@ -3124,7 +3124,7 @@
 		 (2838,'S',null,2654.00),
 		 (2839,'S',null,3075.00),
 		 (2840,'S',null,5703.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2841,'S',null,4839.00),
 		 (2842,'S',null,3078.00),
 		 (2843,'S',null,2272.00),
@@ -3135,7 +3135,7 @@
 		 (2848,'S',null,5547.00),
 		 (2849,'S',null,4047.00),
 		 (2850,'S',null,2080.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2851,'S',null,2916.00),
 		 (2852,'S',null,2172.00),
 		 (2853,'S',null,2457.00),
@@ -3146,7 +3146,7 @@
 		 (2858,'S',null,5790.00),
 		 (2859,'S',null,3124.00),
 		 (2860,'S',null,5916.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2861,'S',null,2848.00),
 		 (2862,'S',null,3062.00),
 		 (2863,'S',null,2909.00),
@@ -3157,7 +3157,7 @@
 		 (2868,'S',null,3046.00),
 		 (2869,'S',null,5160.00),
 		 (2870,'S',null,3109.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2871,'S',null,3070.00),
 		 (2872,'S',null,2626.00),
 		 (2873,'S',null,5343.00),
@@ -3168,7 +3168,7 @@
 		 (2878,'S',null,2014.00),
 		 (2879,'S',null,2728.00),
 		 (2880,'S',null,5226.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2881,'S',null,3072.00),
 		 (2882,'S',null,3038.00),
 		 (2883,'S',null,4968.00),
@@ -3179,7 +3179,7 @@
 		 (2888,'S',null,2233.00),
 		 (2889,'S',null,2303.00),
 		 (2890,'S',null,3075.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2891,'S',null,2731.00),
 		 (2892,'S',null,3199.00),
 		 (2893,'S',null,2863.00),
@@ -3190,7 +3190,7 @@
 		 (2898,'S',null,2781.00),
 		 (2899,'S',null,3127.00),
 		 (2900,'S',null,5539.30);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2901,'S',null,6824.00),
 		 (2902,'S',null,4913.00),
 		 (2903,'S',null,2167.00),
@@ -3201,7 +3201,7 @@
 		 (2908,'S',null,14567.00),
 		 (2909,'S',null,6487.00),
 		 (2910,'S',null,3267.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2911,'S',null,6003.00),
 		 (2912,'S',null,7745.00),
 		 (2913,'S',null,6321.00),
@@ -3212,7 +3212,7 @@
 		 (2918,'S',null,7500.00),
 		 (2919,'S',null,3012.00),
 		 (2920,'S',null,8372.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2921,'S',null,5112.00),
 		 (2922,'S',null,4062.00),
 		 (2923,'S',null,2083.00),
@@ -3223,7 +3223,7 @@
 		 (2928,'S',null,4077.00),
 		 (2929,'S',null,4601.00),
 		 (2930,'S',null,5300.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2931,'S',null,2345.00),
 		 (2932,'S',null,5211.50),
 		 (2933,'S',null,7932.00),
@@ -3234,7 +3234,7 @@
 		 (2938,'S',null,6894.00),
 		 (2939,'S',null,3369.00),
 		 (2940,'S',null,6339.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2941,'S',null,5438.00),
 		 (2942,'S',null,7896.00),
 		 (2943,'S',null,6328.00),
@@ -3245,7 +3245,7 @@
 		 (2948,'S',null,7893.00),
 		 (2949,'S',null,13098.00),
 		 (2950,'S',null,5027.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2951,'S',null,2134.00),
 		 (2952,'S',null,5704.90),
 		 (2953,'S',null,8034.00),
@@ -3256,7 +3256,7 @@
 		 (2958,'S',null,6345.00),
 		 (2959,'S',null,6349.00),
 		 (2960,'S',null,8376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2961,'S',null,5827.00),
 		 (2962,'S',null,4000.00),
 		 (2963,'S',null,5172.50),
@@ -3267,7 +3267,7 @@
 		 (2968,'S',null,5034.00),
 		 (2969,'S',null,8345.00),
 		 (2970,'S',null,6543.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2971,'S',null,5617.00),
 		 (2972,'S',null,8256.00),
 		 (2973,'S',null,6172.50),
@@ -3278,7 +3278,7 @@
 		 (2978,'S',null,5488.00),
 		 (2979,'S',null,4500.00),
 		 (2980,'S',null,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2981,'S',null,3129.00),
 		 (2982,'S',null,7432.00),
 		 (2983,'S',null,3934.00),
@@ -3289,7 +3289,7 @@
 		 (2988,'S',null,8354.00),
 		 (2989,'S',null,3669.00),
 		 (2990,'S',null,3402.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (2991,'S',null,6845.00),
 		 (2992,'S',null,3285.00),
 		 (2993,'S',null,7965.00),
@@ -3300,7 +3300,7 @@
 		 (2998,'S',null,5617.00),
 		 (2999,'S',null,7265.00),
 		 (3000,'S',null,13876.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3001,'S',null,3725.00),
 		 (3002,'S',null,821.00),
 		 (3003,'S',null,5567.00),
@@ -3311,7 +3311,7 @@
 		 (3008,'S',null,3910.00),
 		 (3009,'S',null,168.00),
 		 (3010,'S',null,7746.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3011,'S',null,3154.00),
 		 (3012,'S',null,987.00),
 		 (3013,'S',null,2458.00),
@@ -3322,7 +3322,7 @@
 		 (3018,'S',null,5432.00),
 		 (3019,'S',null,2894.00),
 		 (3020,'S',null,6934.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3021,'S',null,3965.00),
 		 (3022,'S',null,3918.00),
 		 (3023,'S',null,987.00),
@@ -3333,7 +3333,7 @@
 		 (3028,'S',null,5567.00),
 		 (3029,'S',null,2891.00),
 		 (3030,'S',null,7649.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3031,'S',null,3375.00),
 		 (3032,'S',null,6932.00),
 		 (3033,'S',null,4721.00),
@@ -3344,7 +3344,7 @@
 		 (3038,'S',null,5294.00),
 		 (3039,'S',null,2376.00),
 		 (3040,'S',null,987.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3041,'S',null,7393.00),
 		 (3042,'S',null,6029.00),
 		 (3043,'S',null,5567.00),
@@ -3355,7 +3355,7 @@
 		 (3048,'S',null,6522.00),
 		 (3049,'S',null,4137.00),
 		 (3050,'S',null,7776.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3051,'S',null,4512.00),
 		 (3052,'S',null,6210.00),
 		 (3053,'S',null,3725.00),
@@ -3366,7 +3366,7 @@
 		 (3058,'S',null,2893.00),
 		 (3059,'S',null,7503.00),
 		 (3060,'S',null,6937.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3061,'S',null,5061.00),
 		 (3062,'S',null,3911.00),
 		 (3063,'S',null,4127.00),
@@ -3377,7 +3377,7 @@
 		 (3068,'S',null,5076.00),
 		 (3069,'S',null,987.00),
 		 (3070,'S',null,7196.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3071,'S',null,5296.00),
 		 (3072,'S',null,5568.00),
 		 (3073,'S',null,2023.00),
@@ -3388,7 +3388,7 @@
 		 (3078,'S',null,3911.00),
 		 (3079,'S',null,5781.00),
 		 (3080,'S',null,5029.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3081,'S',null,4185.00),
 		 (3082,'S',null,6234.00),
 		 (3083,'S',null,987.00),
@@ -3399,7 +3399,7 @@
 		 (3088,'S',null,3911.00),
 		 (3089,'S',null,5568.00),
 		 (3090,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3091,'S',null,2025.00),
 		 (3092,'S',null,3178.00),
 		 (3093,'S',null,6947.00),
@@ -3410,7 +3410,7 @@
 		 (3098,'S',null,5297.00),
 		 (3099,'S',null,4197.00),
 		 (3100,'S',null,5058.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3101,'S',null,987.00),
 		 (3102,'S',null,7999.00),
 		 (3103,'S',null,7896.00),
@@ -3421,7 +3421,7 @@
 		 (3108,'S',null,3938.00),
 		 (3109,'S',null,7652.00),
 		 (3110,'S',null,3912.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3111,'S',null,2896.00),
 		 (3112,'S',null,5297.00),
 		 (3113,'S',null,4197.00),
@@ -3432,7 +3432,7 @@
 		 (3118,'S',null,3938.00),
 		 (3119,'S',null,2028.00),
 		 (3120,'S',null,3179.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3121,'S',null,6934.00),
 		 (3122,'S',null,3939.00),
 		 (3123,'S',null,7652.00),
@@ -3443,7 +3443,7 @@
 		 (3128,'S',null,5058.00),
 		 (3129,'S',null,987.00),
 		 (3130,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3131,'S',null,7896.00),
 		 (3132,'S',null,3938.00),
 		 (3133,'S',null,2030.00),
@@ -3454,7 +3454,7 @@
 		 (3138,'S',null,3913.00),
 		 (3139,'S',null,2898.00),
 		 (3140,'S',null,5297.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3141,'S',null,4503.00),
 		 (3142,'S',null,5058.00),
 		 (3143,'S',null,987.00),
@@ -3465,7 +3465,7 @@
 		 (3148,'S',null,3181.00),
 		 (3149,'S',null,6940.00),
 		 (3150,'S',null,3940.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3151,'S',null,7652.00),
 		 (3152,'S',null,3913.00),
 		 (3153,'S',null,2899.00),
@@ -3476,7 +3476,7 @@
 		 (3158,'S',null,7999.00),
 		 (3159,'S',null,7896.00),
 		 (3160,'S',null,3938.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3161,'S',null,2034.00),
 		 (3162,'S',null,3182.00),
 		 (3163,'S',null,6943.00),
@@ -3487,7 +3487,7 @@
 		 (3168,'S',null,5297.00),
 		 (3169,'S',null,4509.00),
 		 (3170,'S',null,5061.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3171,'S',null,987.00),
 		 (3172,'S',null,7999.00),
 		 (3173,'S',null,7896.00),
@@ -3498,7 +3498,7 @@
 		 (3178,'S',null,3942.00),
 		 (3179,'S',null,7652.00),
 		 (3180,'S',null,3913.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3181,'S',null,2901.00),
 		 (3182,'S',null,5297.00),
 		 (3183,'S',null,4512.00),
@@ -3509,7 +3509,7 @@
 		 (3188,'S',null,3938.00),
 		 (3189,'S',null,2039.00),
 		 (3190,'S',null,3184.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3191,'S',null,6949.00),
 		 (3192,'S',null,3943.00),
 		 (3193,'S',null,7652.00),
@@ -3520,7 +3520,7 @@
 		 (3198,'S',null,5061.00),
 		 (3199,'S',null,987.00),
 		 (3200,'S',null,7999.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3201,'S',null,2145.00),
 		 (3202,'S',null,5487.00),
 		 (3203,'S',null,2798.00),
@@ -3531,7 +3531,7 @@
 		 (3208,'S',null,2241.00),
 		 (3209,'S',null,4167.00),
 		 (3210,'S',null,3017.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3211,'S',null,950.00),
 		 (3212,'S',null,5379.00),
 		 (3213,'S',null,5802.00),
@@ -3542,7 +3542,7 @@
 		 (3218,'S',null,2913.00),
 		 (3219,'S',null,2274.00),
 		 (3220,'S',null,2556.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3221,'S',null,400.00),
 		 (3222,'S',null,3600.00),
 		 (3223,'S',null,4932.00),
@@ -3553,7 +3553,7 @@
 		 (3228,'S',null,2713.00),
 		 (3229,'S',null,3280.00),
 		 (3230,'S',null,2757.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3231,'S',null,4152.00),
 		 (3232,'S',null,5085.00),
 		 (3233,'S',null,3260.00),
@@ -3564,7 +3564,7 @@
 		 (3238,'S',null,2095.00),
 		 (3239,'S',null,5154.00),
 		 (3240,'S',null,2376.00);
-	insert into projeto_churn.bronze.perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
+	insert into projeto_churn.bronze.tb_perfil_cliente (id,ind_coparticipacao,vlr_mensal,vlr_coparticipacao) values
 		 (3241,'S',null,4701.00),
 		 (3242,'S',null,3290.00),
 		 (3243,'S',null,5316.00),

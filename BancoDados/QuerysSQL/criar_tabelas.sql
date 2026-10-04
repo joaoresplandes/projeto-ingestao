@@ -14,4 +14,4 @@ create table projeto_churn.silver.tb_cliente_churn_auditoria(
 		ano_mes int not null,
 		data_insercao timestamp not null,
 		genero varchar(1) not null
-)
+);

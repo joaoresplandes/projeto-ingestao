@@ -6,7 +6,7 @@ import polars as pl
 class CamadaBronze:
     def __init__(self):
         self.__conexao = connect(DBAuditoria().engine)
-        self.__nm_tb_churn_bronze: str = r'projeto_churn.silver.tb_cliente_churn_auditoria'
+        self.__nm_tb_churn_bronze: str = r'projeto_churn.bronze.tb_sis_crm_churn'
 
     def tb_sis_crm_churn_bronze(self) -> pl.DataFrame:
         """
