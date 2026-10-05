@@ -1,10 +1,9 @@
+from Pipeline.Silver.SIS_CRM_CHURN.fluxo_db_sis_crm_churn import DBCrmChur
 from Pipeline.Silver.RotinaBancoSilver import RotinaBanco
 from Pipeline.Silver.Ingestao.ingestao import CamadaBronze
 from unidecode import unidecode
 import polars as pl
 import re
-
-from Pipeline.Silver.SIS_CRM_CHURN.fluxo_db_sis_crm_churn import DBCrmChur
 
 
 class SilverSisCrmChurn(RotinaBanco):
@@ -89,17 +88,6 @@ class SilverSisCrmChurn(RotinaBanco):
         lista_ids_bronze = [dicionario['id'] for dicionario in lista_dicionario_dados]
         
         return lista_ids_bronze
-
-    # @staticmethod
-    # def criar_dataframe(dict_tabela: dict) -> pl.DataFrame:
-    #     """
-    #     Cria o DataFrame a partir do dicionario de dados já tratado
-    #     :param dict_tabela: dicionario de dados tratado
-    #     :return: DataFrame com os dados tratado
-    #     """
-    #     tabela = pl.DataFrame(dict_tabela)
-    #
-    #     return tabela
 
     @staticmethod
     def comparar_ids_entre_camadas(ids_bronze: list, ids_silver) -> tuple[list, list]:

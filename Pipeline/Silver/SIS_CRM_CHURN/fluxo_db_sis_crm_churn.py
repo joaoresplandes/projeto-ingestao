@@ -1,6 +1,5 @@
 from Pipeline.Silver.RotinaBancoSilver import RotinaBanco
 from pyodbc import Error
-import polars as pl
 from datetime import datetime
 
 
