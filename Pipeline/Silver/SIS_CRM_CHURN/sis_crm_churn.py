@@ -4,6 +4,8 @@ from unidecode import unidecode
 import polars as pl
 import re
 
+from Pipeline.Silver.SIS_CRM_CHURN.fluxo_db_sis_crm_churn import DBCrmChur
+
 
 class SilverSisCrmChurn(RotinaBanco):
     def __init__(self):
@@ -21,7 +23,7 @@ class SilverSisCrmChurn(RotinaBanco):
 
     @property
     def tabela_completa(self):
-        return self.__tabela_completa
+        return self.__nm_tabela_churn_bronze
 
     def transformar_dataframe_dicionario(self) -> list:
         """
@@ -88,37 +90,124 @@ class SilverSisCrmChurn(RotinaBanco):
         
         return lista_ids_bronze
 
+    # @staticmethod
+    # def criar_dataframe(dict_tabela: dict) -> pl.DataFrame:
+    #     """
+    #     Cria o DataFrame a partir do dicionario de dados já tratado
+    #     :param dict_tabela: dicionario de dados tratado
+    #     :return: DataFrame com os dados tratado
+    #     """
+    #     tabela = pl.DataFrame(dict_tabela)
+    #
+    #     return tabela
+
     @staticmethod
-    def criar_dataframe(dict_tabela: dict) -> pl.DataFrame:
+    def comparar_ids_entre_camadas(ids_bronze: list, ids_silver) -> tuple[list, list]:
         """
-        Cria o DataFrame a partir do dicionario de dados já tratado
-        :param dict_tabela: dicionario de dados tratado
-        :return: DataFrame com os dados tratado
+        Verifica se na camada Bronze tem novos registros que ainda não contem na cama Silver
+        :param ids_bronze: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...]
+        :param ids_silver: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...]
+        :return: [32, 33, 34, 35, 36, 37, 38, 39, 40, 41, ...]
         """
-        tabela = pl.DataFrame(dict_tabela)
+        ids_novos = [
+            id_bronze for id_bronze in ids_bronze
+            if int(id_bronze) not in [int(num_id) for num_id in [int(id) for id in ids_silver]]
+        ]
 
-        return tabela
+        ids_existentes = [
+            id_bronze for id_bronze in ids_bronze
+            if int(id_bronze) in [int(num_id) for num_id in [int(id) for id in ids_silver]]
+        ]
 
-    def executar(self):
+        return ids_novos, ids_existentes
+
+    @staticmethod
+    def filtrar_dados(lista_ids: list, dados_camada_bronze: list) -> list:
         """
-        Rotina de tratamento de dados da fonte inicial .txt
-        :param dicionario_tabela: dicionario de dados tratado
-        :return: DataFrame com os dados tratado
+        Com a lista de ids novos, é possivel filtrar apenas os registros novos da lista de dicionario de dados para
+        serem encaminhados para a camada Silver
+        :param lista_ids: [32, 33, 34, 35, 36, 37, 38, 39, 40, 41, ...]
+        :param dados_camada_bronze: [{'id': 1, 'cpf': 12345678901, 'nome': 'Alice', 'sobrenome': 'Alves', ...}]
+        :return: [{'id': 33, 'cpf': 12345678901, 'nome': 'Alice', 'sobrenome': 'Alves', ...}]
         """
-        lista_dados = self.transformar_dataframe_dicionario()
-        lista_dicionario_tabela = self.tratar_colunas(list_dict_tabela=lista_dados)
-        ids_churn_silver = self.ids_sis_crm_churn_silver()
-        ids_churn_bronze = self.obter_ids_bronze(lista_dicionario_tabela)
+        dados_novos = [dado for dado in dados_camada_bronze if int(dado['id']) in [int(id) for id in lista_ids]]
 
+        return dados_novos
 
-        # tabela = self.criar_dataframe(dict_tabela=dicionario_tabela)
+    def verifica_dados_atualizados(self, dados_sis_crm_churn: list) -> list:
+        """
+        Verifica se os dados de 'dados_sis_crm_churn' contem no banco e se houve alteração em alguma coluna para que
+        seja atualizados
+        :param dados_sis_crm_churn: [{'id': '1', 'cpf': '123.456.789-01', 'nome': 'Alice', 'sobrenome': 'Alves', ...}]
+        :return: [{'id': '1', 'cpf': '123.456.789-01', 'nome': 'Alice', 'sobrenome': 'Alves', ...}]
+        """
+        tb_churn_silver = self.tb_sis_crm_churn_silver()
+        registros_atualizados_sis_crm_churn = []
+        for item in dados_sis_crm_churn:
+            try:
+                for nm_coluna in tb_churn_silver.columns[1:len(tb_churn_silver.columns) - 1]:
+                    dsc = tb_churn_silver.filter(
+                        pl.col(tb_churn_silver.columns[0]) == str(item[tb_churn_silver.columns[0]])
+                    )[nm_coluna].to_list()[0]
+                    if dsc != item[nm_coluna]:
+                        registros_atualizados_sis_crm_churn.append(item)
+            except IndexError:
+                continue
 
-        return lista_dicionario_tabela
+        return registros_atualizados_sis_crm_churn
 
+    def rotina_atualizacao(self, ids_existentes: list, lista_dados_bronze: list):
+        """
+        Rotina de verificação de dados atualizados da camada bronze para a silver e atualiza os respectivos dados
+        na tabela 'tb_sis_crm_churn' na camada Silver
+        :param ids_existentes: [32, 33, 34, 35, 36, 37, 38, 39, 40, 41, ...]
+        :param lista_dados_bronze: [{'id': 1, 'cpf': 12345678901, 'nome': 'Alice', 'sobrenome': 'Alves', ...}]
+        :return: None
+        """
+        lista_dados_bronze_existentes = self.filtrar_dados(
+            lista_ids=ids_existentes,
+            dados_camada_bronze=lista_dados_bronze
+        )
+
+        lista_dicionario_dados_existentes = self.tratar_colunas(list_dict_tabela=lista_dados_bronze_existentes)
+        dados_atualizados = self.verifica_dados_atualizados(dados_sis_crm_churn=lista_dicionario_dados_existentes)
+        if dados_atualizados:
+            DBCrmChur().atualizar_tb_sis_crm_churn(lista_dicionario_dados=dados_atualizados)
+            print(f'{len(dados_atualizados)} Dado(s) Atualizado(s)')
+        else:
+            print('Nenhum dado atualizado')
+
+    def rotina_novos(self, ids_novos: list, lista_dados_bronze: list) -> None:
+        """
+        Rotina de inserção de novos dados na tabela de 'tb_sis_crm_churn' na camada Silver
+        :param ids_novos: [32, 33, 34, 35, 36, 37, 38, 39, 40, 41, ...]
+        :param lista_dados_bronze: [{'id': 1, 'cpf': 12345678901, 'nome': 'Alice', 'sobrenome': 'Alves', ...}]
+        :return: None
+        """
+        lista_dados_bronze_novos = self.filtrar_dados(
+            lista_ids=ids_novos,
+            dados_camada_bronze=lista_dados_bronze
+        )
+        if lista_dados_bronze_novos:
+            lista_dicionario_dados_novos = self.tratar_colunas(list_dict_tabela=lista_dados_bronze_novos)
+            DBCrmChur().inserir_tb_sis_crm_churn(lista_dicionario_dados=lista_dicionario_dados_novos)
+            print(f'{len(lista_dados_bronze_novos)} Dado(s) Novo(s) Inserido(s)')
+        else:
+            print('Nenhum dado novo Inserido')
+
+    def executar(self) -> None:
+        """
+        Rotina de ingestão da tabela 'tb_sis_crm_churn' na camada Silver
+        :return: None
+        """
+        lista_dados_bronze = self.transformar_dataframe_dicionario()
+        ids_novos, ids_existentes = self.comparar_ids_entre_camadas(
+            ids_bronze=self.obter_ids_bronze(lista_dados_bronze),
+            ids_silver=self.ids_sis_crm_churn_silver()
+        )
+
+        self.rotina_atualizacao(ids_existentes=ids_existentes, lista_dados_bronze=lista_dados_bronze)
+        self.rotina_novos(ids_novos=ids_novos, lista_dados_bronze=lista_dados_bronze)
 
 if __name__ == '__main__':
-    lista_dicionario = SilverSisCrmChurn().executar()
-    print(lista_dicionario[0])
-    for chave, valor in lista_dicionario[0].items():
-        print(f'chave: {chave} - valor: {valor} - tipo dado -> {type(valor)}')
-
+    SilverSisCrmChurn().executar()

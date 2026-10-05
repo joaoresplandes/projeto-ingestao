@@ -12,4 +12,4 @@ create table projeto_churn.bronze.tb_sis_crm_churn(
 	mes varchar(2) null,
 	ano varchar(4) null,
 	dt_atualizacao varchar(30) not null
-)
+);
