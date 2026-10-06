@@ -1,6 +1,6 @@
 from Pipeline.Silver.SIS_CRM_CHURN.fluxo_db_sis_crm_churn import DBCrmChur
 from Pipeline.Silver.RotinaBancoSilver import RotinaBanco
-from Pipeline.Silver.Ingestao.ingestao import CamadaBronze
+from Pipeline.Silver.SIS_CRM_CHURN.Ingestao.ingestao import CamadaBronze
 from unidecode import unidecode
 import polars as pl
 import re

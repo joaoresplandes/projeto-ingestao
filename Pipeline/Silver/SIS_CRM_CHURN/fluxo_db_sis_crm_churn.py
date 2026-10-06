@@ -76,8 +76,8 @@ class DBCrmChur(RotinaBanco):
                     values ({placeholder})
                 """,
                 self.lista_dados_sis_crm_churn(lista_dados_churn=lista_dicionario_dados)
-
             )
+
     def atualizar_tb_sis_crm_churn(self, lista_dicionario_dados: list) -> None:
         """
         Atualiza a tabela 'tb_sis_crm_churm' caso algum dado ja gravado tenha sido alterado na fonte

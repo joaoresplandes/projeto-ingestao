@@ -1,4 +1,4 @@
-from Pipeline.Silver.Auditoria.TratarAuditoria.colunas import ColunasAuditoria
+from Pipeline.Silver.Auditoria.SubRotinas.colunas import ColunasAuditoria
 from datetime import datetime
 import polars as pl
 
@@ -6,6 +6,12 @@ import polars as pl
 class TratarAuditoria:
     @staticmethod
     def selecionar_colunas(tabela_auditoria: pl.DataFrame) -> pl.DataFrame:
+        """
+        Seleciona as colunas iniciais para o tratamento dos dados -> 'id', 'cpf', 'nome', 'sobrenome', 'idgenero',
+        'indcliente', 'mes', 'ano'
+        :param tabela_auditoria: pl.DataFrame
+        :return: pl.DataFrame com colunas reduzidas
+        """
         tabela_auditoria = tabela_auditoria.select(ColunasAuditoria.colunas)
 
         return tabela_auditoria
@@ -57,9 +63,9 @@ class TratarAuditoria:
     @staticmethod
     def coluna_atualizacao_banco(tabela_auditoria: pl.DataFrame) -> pl.DataFrame:
         """
-        Coluna de atualização de registro
+        Coluna de data inserção para informar quando um registro foi atualizado na tabela de auditoria
         :param tabela_auditoria: pl.DataFrame
-        :return: pl.DataFrame com a coluna de
+        :return: pl.DataFrame com as coluna de data_insercao
         """
         tabela_auditoria = tabela_auditoria.with_columns(pl.lit(datetime.now()).alias('data_insercao'))
 

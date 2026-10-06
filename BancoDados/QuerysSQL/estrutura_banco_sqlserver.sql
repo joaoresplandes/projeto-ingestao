@@ -53,10 +53,10 @@ create table silver.tb_cliente_churn_auditoria(
 		id int not null,
 		cpf varchar(11) not null,
 		nome_completo varchar(100) not null,
+		genero varchar(1) not null,
 		ind_cliente int not null,
 		ano_mes int not null,
-		data_insercao timestamp not null,
-		genero varchar(1) not null
+		data_insercao timestamp not null
 );
 
 create table silver.tb_sis_crm_churn(
@@ -74,3 +74,6 @@ create table silver.tb_sis_crm_churn(
 	ano varchar(4) null,
 	dt_atualizacao varchar(30) not null
 );
+-- Atualizar o tipo da coluna cpf de int para bigint da tabela silver.tb_sis_crm_churn
+alter table projeto_churn.silver.tb_sis_crm_churn
+alter column cpf bigint not null;

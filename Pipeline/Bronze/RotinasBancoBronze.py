@@ -16,13 +16,13 @@ class RotinaBanco:
         with self.__conexao.cursor() as cursor:
             consulta = cursor.execute(f"""select * from {self.__nm_tabela_banco}"""
             )
-            consulta_estado_civil = pl.DataFrame(
+            consulta_tabela = pl.DataFrame(
                 [tuple(row) for row in consulta.fetchall()],
                 schema=[desc[0] for desc in cursor.description],
                 orient='row'
             )
 
-        return consulta_estado_civil
+        return consulta_tabela
 
     @property
     def conexao(self):
