@@ -1,4 +1,4 @@
-from Pipeline.Silver.Auditoria.SubRotinas.colunas import ColunasAuditoria
+from Pipeline.Gold.Auditoria.SubRotinas.colunas import ColunasAuditoria
 from datetime import datetime
 import polars as pl
 

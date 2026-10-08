@@ -1,6 +1,6 @@
 from Pipeline.Silver.RotinaBancoSilver import RotinaBanco
-from Pipeline.Silver.Auditoria.SubRotinas.sub_rotinas import TratarAuditoria
-from Pipeline.Silver.Auditoria.fluxo_db_auditoria import DBAuditoria
+from Pipeline.Gold.Auditoria.SubRotinas.sub_rotinas import TratarAuditoria
+from Pipeline.Gold.Auditoria.fluxo_db_auditoria import DBAuditoria
 import polars as pl
 
 
