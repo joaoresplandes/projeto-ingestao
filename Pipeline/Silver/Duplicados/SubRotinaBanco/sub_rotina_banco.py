@@ -47,7 +47,13 @@ class SubRotinaBanco(RotinaBanco):
 
         return lista_tuplas_crm_churn
 
-    def inserir_dados_nao_duplicados(self, lista_dicionario_dados: list):
+    def inserir_dados_nao_duplicados(self, lista_dicionario_dados: list) -> None:
+        """
+        Insere os dados que contem em 'lista_dicionario_dados' no banco 'tb_sis_crm_churn_sem_duplicatas' na camada
+        silver
+        :param lista_dicionario_dados: {'id': '1', 'cpf': '123.456.789-01', 'nome': 'Alice', 'sobrenome': 'Alves', ...}
+        :return: None
+        """
         placeholder = ', '.join('?' for _ in lista_dicionario_dados[0].keys()) + ', ?'
         with self.conexao as conexao:
             with conexao.cursor() as cursor:
@@ -74,7 +80,13 @@ class SubRotinaBanco(RotinaBanco):
                     self.lista_dados_novos(lista_dados_churn=lista_dicionario_dados)
                 )
 
-    def inserir_dados_duplicados(self, lista_dicionario_dados: list):
+    def inserir_dados_duplicados(self, lista_dicionario_dados: list) -> None:
+        """
+        Insere os dados que contem em 'tb_churn_cpfs_duplicados' no banco 'tb_sis_crm_churn_sem_duplicatas' na camada
+        silver
+        :param lista_dicionario_dados: {'id': '1', 'cpf': '123.456.789-01', 'nome': 'Alice', 'sobrenome': 'Alves', ... }
+        :return: None
+        """
         placeholder = ', '.join('?' for _ in lista_dicionario_dados[0].keys()) + ', ?'
         with self.conexao as conexao:
             with conexao.cursor() as cursor:
