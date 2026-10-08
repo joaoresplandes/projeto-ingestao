@@ -6,7 +6,7 @@ from datetime import datetime
 class DBCrmChur(RotinaBanco):
     def __init__(self):
         self.__nm_tb_sis_crm_churn_silver: str = 'projeto_churn.silver.tb_sis_crm_churn'
-        super().__init__(nome_tabela=self.__nm_tb_sis_crm_churn_silver)
+        super().__init__()
 
     @staticmethod
     def lista_dados_sis_crm_churn(lista_dados_churn: list) -> list:
@@ -106,6 +106,6 @@ class DBCrmChur(RotinaBanco):
                         self.lista_dados_sis_crm_churn_atualizacao(lista_dados_churn=lista_dicionario_dados)
                     )
         except Error as e:
-            print(f'Errp de atualização: {e}')
+            print(f'Erro de atualização: {e}')
         finally:
             self.conexao.close()

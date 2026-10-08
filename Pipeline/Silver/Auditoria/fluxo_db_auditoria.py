@@ -5,7 +5,7 @@ from datetime import datetime
 class DBAuditoria(RotinaBanco):
     def __init__(self):
         self.__tabela_auditoria_silver: str = 'projeto_churn.silver.tb_cliente_churn_auditoria'
-        super().__init__(nome_tabela=self.__tabela_auditoria_silver)
+        super().__init__()
 
     @staticmethod
     def lista_dados_auditoria(lista_dados_auditoria: list) -> list:

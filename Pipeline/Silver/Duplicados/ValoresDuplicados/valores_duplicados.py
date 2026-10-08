@@ -1,4 +1,4 @@
-from FluxoExecucao.RotinaDuplicados.ValoresDuplicados.colunas import ColunasDuplicados
+from Pipeline.Silver.Duplicados.ValoresDuplicados.colunas import ColunasDuplicados
 import polars as pl
 
 
@@ -15,7 +15,6 @@ class ValoresDuplicados:
 
         return tabela
 
-
     @staticmethod
     def filtrar_tabela_duplicados(tabela: pl.DataFrame, id_duplicatos: list) -> pl.DataFrame:
         """
@@ -29,7 +28,3 @@ class ValoresDuplicados:
         tabela_dados_unicos = ValoresDuplicados.selecionar_colunas(tabela=tabela_dados_unicos)
 
         return tabela_dados_unicos
-
-
-
-

@@ -6,9 +6,9 @@ import polars as pl
 
 class Auditoria(RotinaBanco):
     def __init__(self):
-        self._nm_tabela_sis_crm_churn = 'projeto_churn.silver.tb_sis_crm_churn'
-        super().__init__(nome_tabela=self._nm_tabela_sis_crm_churn)
-        self.__tabela_sis_crm_churn = self.tb_sis_crm_churn_silver()
+        self.__nm_tabela_sis_crm_churn = 'projeto_churn.silver.tb_sis_crm_churn'
+        super().__init__()
+        self.__tabela_sis_crm_churn = self.tb_sis_crm_churn_silver(nm_tabela=self.__nm_tabela_sis_crm_churn)
         self.__tabela_sis_crm_churn = self.filtrar_clientes_auditados()
 
     def filtrar_clientes_auditados(self) -> pl.DataFrame:
@@ -18,7 +18,8 @@ class Auditoria(RotinaBanco):
         """
         return self.__tabela_sis_crm_churn.filter(pl.col('indcliente') == 1)
 
-    def transformar_dataframe_dicionario(self, tabela_churn_silva: pl.DataFrame) -> list:
+    @staticmethod
+    def transformar_dataframe_dicionario(tabela_churn_silva: pl.DataFrame) -> list:
         """
         Transforma uma tabela proveniente de um banco de dados que vem em pl.DataFrame, em uma lista de dicionario de
         dados

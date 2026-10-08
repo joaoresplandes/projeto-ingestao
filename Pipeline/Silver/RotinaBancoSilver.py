@@ -4,17 +4,16 @@ import polars as pl
 
 
 class RotinaBanco:
-    def __init__(self, nome_tabela: str):
+    def __init__(self):
         self.__conexao = connect(DBAuditoria().engine)
-        self.__nm_tabela_banco = nome_tabela
 
-    def tb_sis_crm_churn_silver(self) -> pl.DataFrame:
+    def tb_camada_silver(self, nm_tabela: str) -> pl.DataFrame:
         """
-        Consulta o banco de dados e retorna toda a tabela de 'nome_tabela' como um pl.DataFrame
+        Consulta o banco de dados e retorna toda a tabela de 'nm_tabela' como um pl.DataFrame
         :return: pl.DataFrame
         """
         with self.__conexao.cursor() as cursor:
-            consulta = cursor.execute(f"""select * from {self.__nm_tabela_banco}""")
+            consulta = cursor.execute(f"select * from {nm_tabela}")
             consulta_tb_crm_churm_silver= pl.DataFrame(
                 [tuple(row) for row in consulta.fetchall()],
                 schema=[desc[0] for desc in cursor.description],
@@ -23,13 +22,13 @@ class RotinaBanco:
 
         return consulta_tb_crm_churm_silver
 
-    def ids_sis_crm_churn_silver(self) -> list:
+    def ids_camada_silver(self, nm_tabela: str) -> list:
         """
-        Retorna a lista de todos os ids da base
+        Retorna a lista de todos os ids da tabela 'nm_tabela'
         :return: [1, 2, 4, 5, 6, 7, ...]
         """
         with self.__conexao.cursor() as cursor:
-            consulta = cursor.execute(f"""select * from {self.__nm_tabela_banco}""")
+            consulta = cursor.execute(f"select * from {nm_tabela}")
             lista_ids= pl.DataFrame(
                 [tuple(row) for row in consulta.fetchall()],
                 schema=[desc[0] for desc in cursor.description],

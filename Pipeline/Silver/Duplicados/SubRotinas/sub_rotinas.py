@@ -2,7 +2,8 @@ import polars as pl
 
 
 class SubRotinaDuplicados:
-    def cpfs_duplicados(self, tabela: pl.DataFrame) -> list:
+    @staticmethod
+    def cpfs_duplicados(tabela: pl.DataFrame) -> list:
         """
         Retorna uma lista com todos os cpfs que estão em duplicata na tabela
         :param tabela: DataFrame fonte

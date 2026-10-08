@@ -1,6 +1,6 @@
-from Pipeline.Silver.SIS_CRM_CHURN.fluxo_db_sis_crm_churn import DBCrmChur
+from Pipeline.Silver.SisCrmChurn.fluxo_db_sis_crm_churn import DBCrmChur
 from Pipeline.Silver.RotinaBancoSilver import RotinaBanco
-from Pipeline.Silver.SIS_CRM_CHURN.Ingestao.ingestao import CamadaBronze
+from Pipeline.Silver.SisCrmChurn.Ingestao.ingestao import CamadaBronze
 from unidecode import unidecode
 import polars as pl
 import re
@@ -18,7 +18,7 @@ class SilverSisCrmChurn(RotinaBanco):
             r'\b(agenero|ag|a)\b': 'A',
             r'\b(outros|outro|o)\b': 'O'
         }
-        super().__init__(nome_tabela=self.__nm_tabela_churn_silver)
+        super().__init__()
 
     @property
     def tabela_completa(self):
@@ -129,7 +129,7 @@ class SilverSisCrmChurn(RotinaBanco):
         :param dados_sis_crm_churn: [{'id': '1', 'cpf': '123.456.789-01', 'nome': 'Alice', 'sobrenome': 'Alves', ...}]
         :return: [{'id': '1', 'cpf': '123.456.789-01', 'nome': 'Alice', 'sobrenome': 'Alves', ...}]
         """
-        tb_churn_silver = self.tb_sis_crm_churn_silver()
+        tb_churn_silver = self.tb_camada_silver(nm_tabela=self.__nm_tabela_churn_silver)
         registros_atualizados_sis_crm_churn = []
         for item in dados_sis_crm_churn:
             try:
@@ -191,7 +191,7 @@ class SilverSisCrmChurn(RotinaBanco):
         lista_dados_bronze = self.transformar_dataframe_dicionario()
         ids_novos, ids_existentes = self.comparar_ids_entre_camadas(
             ids_bronze=self.obter_ids_bronze(lista_dados_bronze),
-            ids_silver=self.ids_sis_crm_churn_silver()
+            ids_silver=self.ids_camada_silver(nm_tabela=self.__nm_tabela_churn_silver)
         )
 
         self.rotina_atualizacao(ids_existentes=ids_existentes, lista_dados_bronze=lista_dados_bronze)
