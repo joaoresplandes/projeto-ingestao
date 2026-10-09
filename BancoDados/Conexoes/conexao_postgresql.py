@@ -1,10 +1,10 @@
-import os
+from BancoDados.comum import ComumPostgreSQL
 from dotenv import load_dotenv
-import pyodbc
+import os
 
 
 class DBAuditoria:
-    load_dotenv(rf"{'/'.join([path for path in os.getcwd().split('/')][:6])}/Comum/.env_banco")
+    load_dotenv(rf"{ComumPostgreSQL.PATH_DB}/.env_banco")
 
     def __init__(self):
         self.LOGIN = os.getenv('login_banco')

@@ -1,4 +1,4 @@
-from BancoDados.conexao import DBAuditoria
+from BancoDados.Conexoes.conexao_postgresql import DBAuditoria
 from pyodbc import connect
 import polars as pl
 

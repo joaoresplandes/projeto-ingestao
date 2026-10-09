@@ -1,6 +1,6 @@
 .env
-Comum/.env_mongo
-Comum/.env_banco
+Mongo/Conexao/.env_mongo
+BancoDados/Conexoes/.env_banco
 *.ipynb
 .venv/
 __pycache__/

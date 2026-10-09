@@ -14,6 +14,7 @@ class MarketingGold(RotinaBanco):
         tabela_silver = SubRotinasCamada.selecionar_colunas_entrada(self.tabela(nm_tabela=self.__nm_marketing_silver))
         tabela_silver_escolaridade = Escolaridade(tabela=tabela_silver).executar()
         tabela_silver_estado_civil = EstadoCivil(tabela=tabela_silver_escolaridade).executar()
+        print(tabela_silver_estado_civil)
 
 if __name__ == '__main__':
     MarketingGold().rotina()
