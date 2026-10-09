@@ -4,8 +4,12 @@ create table projeto_churn.silver.tb_churn_marketing(
 	codestadocivil int not null,
 	idade int not null,
 	uf varchar(2) null,
-	codescolatidade int null,
+	codescolaridade int null,
 	indcliente int null,
 	ano_mes int null,
 	data_insercao varchar(30) not null
 );
+
+-- Renomear coluna caso necessario
+alter table projeto_churn.silver.tb_churn_marketing
+rename column codescolatidade to codescolaridade;

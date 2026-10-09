@@ -1,12 +1,15 @@
 from Comum.Fontes.origens import Path
+from BancoDados.rotina_banco import RotinaBanco
 from Pipeline.Bronze.EstadoCivil.fluxo_db_estado_civil import DBEstadoCivil
 from json import loads
 import polars as pl
 
 
-class IngestaoEstadoCivil:
+class IngestaoEstadoCivil(RotinaBanco):
     def __init__(self):
-        self.__tabela_completa = DBEstadoCivil().consultar_tb_completo()
+        self.__nm_tb_estado_civil: str = 'projeto_churn.bronze.tb_estado_civil'
+        super().__init__()
+        self.__tabela_completa = self.tabela(nm_tabela=self.__nm_tb_estado_civil)
 
 
     @staticmethod

@@ -5,5 +5,5 @@ create table gold.tb_cliente_churn_auditoria(
 		genero varchar(1) not null,
 		ind_cliente int not null,
 		ano_mes int not null,
-		data_insercao timestamp not null
+		data_insercao varchar(30) not null
 );

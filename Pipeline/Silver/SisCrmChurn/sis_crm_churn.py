@@ -129,7 +129,7 @@ class SilverSisCrmChurn(RotinaBanco):
             try:
                 for nm_coluna in tb_churn_silver.columns[1:len(tb_churn_silver.columns) - 1]:
                     dsc = tb_churn_silver.filter(
-                        pl.col(tb_churn_silver.columns[0]) == str(item[tb_churn_silver.columns[0]])
+                        pl.col(tb_churn_silver.columns[0]) == int(item[tb_churn_silver.columns[0]])
                     )[nm_coluna].to_list()[0]
                     if dsc != item[nm_coluna]:
                         registros_atualizados_sis_crm_churn.append(item)

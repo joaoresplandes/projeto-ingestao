@@ -1,11 +1,14 @@
+from BancoDados.rotina_banco import RotinaBanco
 from Comum.Fontes.origens import Path
 from Pipeline.Bronze.Escolaridade.fluxo_db_escolaridade import DBEscolaridade
 import polars as pl
 
 
-class IngestaoEscolaridade:
+class IngestaoEscolaridade(RotinaBanco):
     def __init__(self):
-        self.__tabela_completa = DBEscolaridade().consultar_tb_completo()
+        self.__nm_tb_escolaridade: str = 'projeto_churn.bronze.tb_escolaridade'
+        super().__init__()
+        self.__tabela_completa = self.tabela(nm_tabela=self.__nm_tb_escolaridade)
 
     @staticmethod
     def obter_dados_escolaridade() -> list:
