@@ -1,71 +1,42 @@
-import pyodbc
-import polars as pl
 from BancoDados.conexao import DBAuditoria
+from pyodbc import connect
+import polars as pl
 
 
-class BancoDados:
+class RotinaBanco:
     def __init__(self):
-        self.__conexao = pyodbc.connect(DBAuditoria().engine)
-        self.__NOME_TABELA_AUDITORIA: str = 'projeto_churn.silver.cliente_churn_auditoria'
-        self.__NOME_TABELA_PERFIL_CLIENTE: str = 'projeto_churn.bronza.perfil_cliente'
+        self.__conexao = connect(DBAuditoria().engine)
 
-    def consultar_tabela(self) -> pl.DataFrame:
-        with self.__conexao.cursor() as cursor:
-            cursor.execute(f"SELECT * FROM {self.__NOME_TABELA_AUDITORIA}")
-            tabela_consulta = pl.DataFrame(
-                [tuple(row) for row in cursor.fetchall()],
-                schema=[desc[0] for desc in cursor.description],
-                orient='row'
-            )
-
-        return tabela_consulta
-
-    def consulta_perfil_cliente(self, lista_ids: tuple) -> pl.DataFrame:
+    def tabela(self, nm_tabela: str) -> pl.DataFrame:
         """
-        realiza uma consulta no banco de perfil cliente para os ids informados em 'lista_ids'
-        :param lista_ids: (1, 5, 4, 15, 3)
+        Consulta o banco de dados e retorna toda a tabela de 'nm_tabela' como um pl.DataFrame
         :return: pl.DataFrame
         """
         with self.__conexao.cursor() as cursor:
-            cursor.execute(f"""
-                SELECT 
-                    ID,
-                    VLR_MENSAL,
-                    VLR_COPARTICIPACAO
-                FROM {self.__NOME_TABELA_PERFIL_CLIENTE}
-                WHERE ID IN {lista_ids}"""
-            )
-            consulta_perfil = pl.DataFrame(
-                [tuple(row) for row in cursor.fetchall()],
+            consulta = cursor.execute(f"select * from {nm_tabela}")
+            consulta_tb_crm_churm_silver= pl.DataFrame(
+                [tuple(row) for row in consulta.fetchall()],
                 schema=[desc[0] for desc in cursor.description],
                 orient='row'
             )
 
-        return consulta_perfil
+        return consulta_tb_crm_churm_silver
 
-
-    def inserir_dados(self, tabela_dados: pl.DataFrame) -> None:
+    def ids(self, nm_tabela: str) -> list:
         """
-        Realiza a inserção dos dados novos na tabela
-        :param tabela_dados:
-        :return:
+        Retorna a lista de todos os ids da tabela 'nm_tabela'
+        :return: [1, 2, 4, 5, 6, 7, ...]
         """
-        placeholders = ", ".join("?" for _ in tabela_dados.columns)
         with self.__conexao.cursor() as cursor:
-            cursor.execute(f'TRUNCATE TABLE {self.__NOME_TABELA_AUDITORIA}')
-            cursor.fast_executemany = True
-            cursor.executemany(
-                f"""
-                    INSERT INTO {self.__NOME_TABELA_AUDITORIA}(
-                    ID_CLI, 
-                    CPF_CLI, 
-                    NOME_COMPLETO_CLI,
-                    GENERO, 
-                    IND_CLIENTE, 
-                    ANO_MES, 
-                    DATA_INSERCAO
-                )
-                VALUES ({placeholders})
-                """,
-                [tuple(row) for row in tabela_dados.iter_rows()]
-            )
+            consulta = cursor.execute(f"select * from {nm_tabela}")
+            lista_ids= pl.DataFrame(
+                [tuple(row) for row in consulta.fetchall()],
+                schema=[desc[0] for desc in cursor.description],
+                orient='row'
+            )['id'].to_list()
+
+        return lista_ids
+
+    @property
+    def conexao(self):
+        return self.__conexao

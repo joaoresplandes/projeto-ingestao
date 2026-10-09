@@ -1,12 +1,12 @@
-from Pipeline.Bronze.RotinasBancoBronze import RotinaBanco
+from BancoDados.rotina_banco import RotinaBanco
 from datetime import datetime
 from pyodbc import Error
 
 
-class DBSisChurn(RotinaBanco):
+class DBBronze(RotinaBanco):
     def __init__(self):
         self.__nm_tb_sis_crm_churn: str = 'projeto_churn.bronze.tb_sis_crm_churn'
-        super().__init__(nome_tabela=self.__nm_tb_sis_crm_churn)
+        super().__init__()
 
 
     @staticmethod

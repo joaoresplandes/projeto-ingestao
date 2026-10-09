@@ -1,9 +1,9 @@
-from Pipeline.Silver.RotinaBancoSilver import RotinaBanco
+from BancoDados.rotina_banco import RotinaBanco
 from datetime import datetime
 from pyodbc import Error
 
 
-class SubRotinaBanco(RotinaBanco):
+class DBSilver(RotinaBanco):
     def __init__(self):
         self.__nm_tb_crm_churn_sem_duplicados: str = 'projeto_churn.silver.tb_sis_crm_churn_sem_duplicatas'
         self.__nm_tb_crm_churn_com_duplicados: str = 'projeto_churn.silver.tb_churn_cpfs_duplicados'

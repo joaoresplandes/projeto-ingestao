@@ -1,4 +1,4 @@
-from FluxoExecucao.EnriquecimentoDados.bases_complementares import PathBasesComplementares
+from Pipeline.Gold.EnriquecimentoDados.bases_complementares import PathBasesComplementares
 import polars as pl
 import json
 

@@ -67,21 +67,23 @@ class TratarAuditoria:
         :param tabela_auditoria: pl.DataFrame
         :return: pl.DataFrame com as coluna de data_insercao
         """
-        tabela_auditoria = tabela_auditoria.with_columns(pl.lit(datetime.now()).alias('data_insercao'))
+        tabela_auditoria = tabela_auditoria.with_columns(pl.lit(
+            datetime.now().strftime('%d/%m/%Y %H:%M:%S')
+        ).alias('data_insercao'))
 
         return tabela_auditoria
 
     @staticmethod
-    def executar_tratativa_auditoria(tabela_auditoria: pl.DataFrame) -> pl.DataFrame:
+    def executar_tratativa_auditoria(tb_auditoria: pl.DataFrame) -> pl.DataFrame:
         """
         Rotina de tratativa de auditoria para o tramamento da base de auditoria
-        :param tabela_auditoria: tabela auditoria filtrada  por indcliente == 1
+        :param tb_auditoria: tabela auditoria filtrada  por indcliente == 1
         :return: tabela com novas colunas e colunas filtradas para inserção em banco de dados
         """
-        tabela_auditoria = TratarAuditoria.selecionar_colunas(tabela_auditoria=tabela_auditoria)
-        tabela_auditoria = TratarAuditoria.coluna_nome_completo(tabela_auditoria=tabela_auditoria)
-        tabela_auditoria = TratarAuditoria.coluna_ano_mes(tabela_auditoria=tabela_auditoria)
-        tabela_auditoria = TratarAuditoria.colunas_finais(tabela_auditoria=tabela_auditoria)
-        tabela_auditoria = TratarAuditoria.coluna_atualizacao_banco(tabela_auditoria=tabela_auditoria)
+        tb_auditoria = TratarAuditoria.selecionar_colunas(tabela_auditoria=tb_auditoria)
+        tb_auditoria = TratarAuditoria.coluna_nome_completo(tabela_auditoria=tb_auditoria)
+        tb_auditoria = TratarAuditoria.coluna_ano_mes(tabela_auditoria=tb_auditoria)
+        tb_auditoria = TratarAuditoria.colunas_finais(tabela_auditoria=tb_auditoria)
+        tb_auditoria = TratarAuditoria.coluna_atualizacao_banco(tabela_auditoria=tb_auditoria)
 
-        return tabela_auditoria
+        return tb_auditoria

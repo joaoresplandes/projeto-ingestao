@@ -1,16 +1,16 @@
 from Pipeline.Bronze.Escolaridade.escolaridade import IngestaoEscolaridade
 from Pipeline.Bronze.EstadoCivil.estado_civil import IngestaoEstadoCivil
-from Pipeline.Bronze.SIS_CRM_CHURN.sis_crm_churn import BronzeSisCrmChurn
+from Pipeline.Bronze.SisCrmChurn.sis_crm_churn import BronzeSisCrmChurn
 from Pipeline.Bronze.MongoDB.rotina import RotinaMongo
 
 
 class RotinaBronze:
 
     @staticmethod
-    def executar():
+    def executar() -> None:
         """
         Executa o processo de ingestão da camada bronze
-        :return:
+        :return: None
         """
         IngestaoEscolaridade().rotina()
         IngestaoEstadoCivil().rotina()

@@ -1,11 +1,11 @@
-from Pipeline.Bronze.RotinasBancoBronze import RotinaBanco
+from BancoDados.rotina_banco import RotinaBanco
 from datetime import datetime
 
 
 class DBEscolaridade(RotinaBanco):
     def __init__(self):
         self.__nm_tb_escolaridade: str = 'projeto_churn.bronze.tb_escolaridade'
-        super().__init__(nome_tabela=self.__nm_tb_escolaridade)
+        super().__init__()
 
     def atualizar_tb_escolaridade(self, dicionario_dados: dict) -> None:
         """

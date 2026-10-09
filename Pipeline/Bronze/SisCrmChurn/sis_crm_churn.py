@@ -1,13 +1,16 @@
 from Comum.Fontes.origens import Path
-from Pipeline.Bronze.SIS_CRM_CHURN.fluxo_db_sis_crm_churn import DBSisChurn
+from BancoDados.rotina_banco import RotinaBanco
+from Pipeline.Bronze.SisCrmChurn.fluxo_db_sis_crm_churn import DBBronze
 from unidecode import unidecode
 import polars as pl
 
 
-class BronzeSisCrmChurn:
+class BronzeSisCrmChurn(RotinaBanco):
     def __init__(self):
         self.path_arquivo = Path.FONTE_PROJETO
-        self.__tabela_completa = DBSisChurn().consultar_tb_completo()
+        self.__nm_tb_sis_crm_churn: str = 'projeto_churn.bronze.tb_sis_crm_churn'
+        super().__init__()
+        self.__tabela_completa = self.tabela(nm_tabela=self.__nm_tb_sis_crm_churn)
 
     def extrair_arquivo(self) -> list:
         """
@@ -137,7 +140,7 @@ class BronzeSisCrmChurn:
         """
         lista_novos_dados_crm_churn = self.verifica_dados_novos(dados_sis_crm_churn=lista_dicionario_dados_churn)
         if lista_novos_dados_crm_churn:
-            DBSisChurn().inserir_tb_sis_crm_churn(lista_dicionario_dados=lista_novos_dados_crm_churn)
+            DBBronze().inserir_tb_sis_crm_churn(lista_dicionario_dados=lista_novos_dados_crm_churn)
             print(f'{len(lista_novos_dados_crm_churn)} dado(s) novo(s) inserido(s) em banco!')
         else:
             print(f'{len(lista_novos_dados_crm_churn)} dado(s) novo(s) inserido(s) em banco!')
@@ -150,14 +153,14 @@ class BronzeSisCrmChurn:
         """
         lt_dados_atualizados_crm_churn = self.verifica_dados_atualizados(dados_sis_crm_churn=lista_dicionario_dados_churn)
         if lt_dados_atualizados_crm_churn:
-            DBSisChurn().atualizar_tb_sis_crm_churn(lista_dicionario_dados=lt_dados_atualizados_crm_churn)
+            DBBronze().atualizar_tb_sis_crm_churn(lista_dicionario_dados=lt_dados_atualizados_crm_churn)
             print(f'{len(lt_dados_atualizados_crm_churn)} dado(s) atualizado(s) em banco!')
         else:
             print(f'{len(lt_dados_atualizados_crm_churn)} dado(s) atualizado(s) em banco!')
 
     def rotina(self) -> None:
         """
-        Rotina de execução do pipeline de ingestão da tabela principal 'sis_crm_churn
+        Rotina de execução do pipeline de ingestão da tabela principal 'SisCrmChurn
         :return: None
         """
         print('Iniciando processo de Ingestão da tabela CRM CHURN na camada Bronze..')

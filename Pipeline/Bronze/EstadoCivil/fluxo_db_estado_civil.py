@@ -1,4 +1,4 @@
-from Pipeline.Bronze.RotinasBancoBronze import RotinaBanco
+from BancoDados.rotina_banco import RotinaBanco
 from datetime import datetime
 import polars as pl
 
@@ -6,7 +6,7 @@ import polars as pl
 class DBEstadoCivil(RotinaBanco):
     def __init__(self):
         self.__nm_tb_estado_civil: str = 'projeto_churn.bronze.tb_estado_civil'
-        super().__init__(nome_tabela=self.__nm_tb_estado_civil)
+        super().__init__()
 
 
     def consultar_tb_estado_civil(self, tupla_ids: tuple) -> pl.DataFrame:

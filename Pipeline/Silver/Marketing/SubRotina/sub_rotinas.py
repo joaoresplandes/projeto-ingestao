@@ -1,8 +1,8 @@
-from FluxoExecucao.Marketing.ETL.Transformar.colunas import ColunasMKT
+# from FluxoExecucao.Marketing.ETL.Transformar.colunas import ColunasMKT
 import polars as pl
 
 
-class Transformar:
+class SubRotinas:
 
     @staticmethod
     def criar_coluna_anomes(tabela_mkt: pl.DataFrame) -> pl.DataFrame:
@@ -43,7 +43,18 @@ class Transformar:
         :param tabela_mkt: tabela completa de funcionarios ativos
         :return: tabela com colunas filtradas
         """
-        tabela_mkt = tabela_mkt.select(ColunasMKT.colunas)
+        tabela_mkt = tabela_mkt.select(
+            [
+                'id',
+                'idgenero',
+                'codestadocivil',
+                'idade',
+                'uf',
+                'codescolaridade',
+                'indcliente',
+                'ano_mes'
+            ]
+        )
 
         return tabela_mkt
 

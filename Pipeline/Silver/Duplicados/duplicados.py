@@ -1,16 +1,18 @@
+from BancoDados.rotina_banco import RotinaBanco
 from Pipeline.Silver.Duplicados.ValoresDuplicados.valores_duplicados import ValoresDuplicados
 from Pipeline.Silver.Duplicados.ValoresNaoDuplicados.valores_sem_duplicados import ValoresNaoDuplicados
 from Pipeline.Silver.Duplicados.SubRotinas.sub_rotinas import SubRotinaDuplicados
-from Pipeline.Silver.Duplicados.SubRotinaBanco.sub_rotina_banco import SubRotinaBanco
-from Pipeline.Silver.RotinaBancoSilver import RotinaBanco
+from Pipeline.Silver.Duplicados.SubRotinaBanco.sub_rotina_banco import DBSilver
 import polars as pl
 
 
 class RotinaDuplicados(RotinaBanco):
     def __init__(self):
         self.__nm_tb_sis_crm_churn_silver: str = 'projeto_churn.silver.tb_sis_crm_churn'
+        self.__nm_tb_churn_cpfs_duplicados: str = 'projeto_churn.silver.tb_churn_cpfs_duplicados'
+        self.__nm_tb_sis_crm_churn_sem_duplicatas: str = 'projeto_churn.silver.tb_sis_crm_churn_sem_duplicatas'
         super().__init__()
-        self._tabela = self.tb_camada_silver(nm_tabela=self.__nm_tb_sis_crm_churn_silver)
+        self._tabela = self.tabela(nm_tabela=self.__nm_tb_sis_crm_churn_silver)
         self._lista_ids_duplicados = SubRotinaDuplicados.executar(tabela=self._tabela)
 
     def tabela_sem_duplicados(self) -> pl.DataFrame:
@@ -62,7 +64,7 @@ class RotinaDuplicados(RotinaBanco):
         :param nm_tabela_banco: 'projeto_churn.silver.tb_sis_crm_churn_sem_duplicatas'
         :return: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... ]
         """
-        lista_ids_banco = self.ids_camada_silver(nm_tabela=nm_tabela_banco)
+        lista_ids_banco = self.ids(nm_tabela=nm_tabela_banco)
         ids_novos = [
             num_id for num_id in [int(dicionario['id']) for dicionario in novos_dados]
             if num_id not in lista_ids_banco
@@ -83,7 +85,9 @@ class RotinaDuplicados(RotinaBanco):
         for item in dados_dicionario:
             try:
                 for nm_coluna in tb_duplicados.columns[1:len(tb_duplicados.columns) - 1]:
-                    dsc = tb_duplicados.filter(pl.col(tb_duplicados.columns[0]) == int(item[tb_duplicados.columns[0]]))[nm_coluna].to_list()[0]
+                    dsc = tb_duplicados.filter(
+                        pl.col(tb_duplicados.columns[0]) == int(item[tb_duplicados.columns[0]])
+                    )[nm_coluna].to_list()[0]
                     if dsc != item[nm_coluna]:
                         registros_atualizados_sis_crm_churn.append(item)
             except IndexError:
@@ -114,15 +118,16 @@ class RotinaDuplicados(RotinaBanco):
         dados_sem_duplicata = self.transformar_dataframe_dicionario(tabela=self.tabela_sem_duplicados())
         ids_novos_dados = self.verificar_tb_duplicados(
             novos_dados=dados_sem_duplicata,
-            nm_tabela_banco='projeto_churn.silver.tb_sis_crm_churn_sem_duplicatas'
+            nm_tabela_banco=self.__nm_tb_sis_crm_churn_sem_duplicatas
         )
-        inserir_dados_sem_duplicata = self.selecionar_dados_para_insercao(
+        sem_duplicata = self.selecionar_dados_para_insercao(
             lista_dicionario_dados=dados_sem_duplicata,
             lista_ids=ids_novos_dados
         )
-        if inserir_dados_sem_duplicata:
-            SubRotinaBanco().inserir_dados_nao_duplicados(lista_dicionario_dados=inserir_dados_sem_duplicata)
-            print(f'{len(inserir_dados_sem_duplicata)} dado(s) inserido(s) na tabela "tb_sis_crm_churn_sem_duplicatas".')
+        if sem_duplicata:
+            DBSilver().inserir_dados_nao_duplicados(lista_dicionario_dados=sem_duplicata)
+            qtde_realizada = len(sem_duplicata)
+            print(f'{qtde_realizada} dado(s) inserido(s) na tabela "{self.__nm_tb_sis_crm_churn_sem_duplicatas}".')
 
     def rotina_inserir_dados_duplicados(self) -> None:
         """
@@ -133,7 +138,7 @@ class RotinaDuplicados(RotinaBanco):
 
         ids_novos_dados_duplicatos = self.verificar_tb_duplicados(
             novos_dados=dados_duplicatos,
-            nm_tabela_banco='projeto_churn.silver.tb_churn_cpfs_duplicados'
+            nm_tabela_banco=self.__nm_tb_churn_cpfs_duplicados
         )
         inserir_dados_duplicata = self.selecionar_dados_para_insercao(
             lista_dicionario_dados=dados_duplicatos,
@@ -141,38 +146,37 @@ class RotinaDuplicados(RotinaBanco):
         )
 
         if inserir_dados_duplicata:
-            SubRotinaBanco().inserir_dados_duplicados(lista_dicionario_dados=dados_duplicatos)
-            print(f'{len(inserir_dados_duplicata)} dado(s) inserido(s) na tabela "tb_churn_cpfs_duplicados".')
+            DBSilver().inserir_dados_duplicados(lista_dicionario_dados=inserir_dados_duplicata)
+            qtde_realizada = len(inserir_dados_duplicata)
+            print(f'{qtde_realizada} dado(s) inserido(s) na tabela "{self.__nm_tb_churn_cpfs_duplicados}".')
 
     def rotina_atualizar_dados_nao_duplicados(self) -> None:
         """
         Rotina de inserção dos novos dados sem duplicata na tabela "tb_sis_crm_churn_sem_duplicatas" da camada silver
         :return: None
         """
-        dados_nao_duplicatos = self.transformar_dataframe_dicionario(tabela=self.tabela_sem_duplicados())
-        tabela_nao_duplicados = self.tb_camada_silver(nm_tabela='projeto_churn.silver.tb_sis_crm_churn_sem_duplicatas')
         dados_a_ser_atualizados = self.verifica_dados_atualizados(
-            dados_dicionario=dados_nao_duplicatos,
-            tb_duplicados=tabela_nao_duplicados
+            dados_dicionario=self.transformar_dataframe_dicionario(tabela=self.tabela_sem_duplicados()),
+            tb_duplicados=self.tabela(nm_tabela=self.__nm_tb_sis_crm_churn_sem_duplicatas)
         )
         if dados_a_ser_atualizados:
-            SubRotinaBanco().atualizar_tb_nao_duplicados(lista_dicionario_dados=dados_a_ser_atualizados)
-            print(f'{len(dados_a_ser_atualizados)} dado(s) atualizado(s) na tabela "tb_sis_crm_churn_sem_duplicatas".')
+            DBSilver().atualizar_tb_nao_duplicados(lista_dicionario_dados=dados_a_ser_atualizados)
+            qtde_registros = len(dados_a_ser_atualizados)
+            print(f'{qtde_registros} dado(s) atualizado(s) na tabela "{self.__nm_tb_sis_crm_churn_sem_duplicatas}".')
 
     def rotina_atualizar_dados_duplicados(self) -> None:
         """
         Rotina de inserção dos novos dados duplicados na tabela "tb_churn_cpfs_duplicados" da camada silver
         :return:
         """
-        dados_nao_duplicatos = self.transformar_dataframe_dicionario(tabela=self.tabela_com_duplicados())
-        tabela_nao_duplicados = self.tb_camada_silver(nm_tabela='projeto_churn.silver.tb_churn_cpfs_duplicados')
-        dados_a_ser_atualizados = self.verifica_dados_atualizados(
-            dados_dicionario=dados_nao_duplicatos,
-            tb_duplicados=tabela_nao_duplicados
+        inserir_dados_atualizados = self.verifica_dados_atualizados(
+            dados_dicionario=self.transformar_dataframe_dicionario(tabela=self.tabela_com_duplicados()),
+            tb_duplicados=self.tabela(nm_tabela=self.__nm_tb_churn_cpfs_duplicados)
         )
-        if dados_a_ser_atualizados:
-            SubRotinaBanco().atualizar_tb_duplicados(lista_dicionario_dados=dados_a_ser_atualizados)
-            print(f'{len(dados_a_ser_atualizados)} dado(s) atualizado(s) na tabela "tb_churn_cpfs_duplicados".')
+        if inserir_dados_atualizados:
+            DBSilver().atualizar_tb_duplicados(lista_dicionario_dados=inserir_dados_atualizados)
+            qtde_realizados = len(inserir_dados_atualizados)
+            print(f'{qtde_realizados} dado(s) atualizado(s) na tabela "{self.__nm_tb_churn_cpfs_duplicados}".')
 
     def rotina_dados_novos(self):
         self.rotina_inserir_dados_nao_duplicados()
@@ -182,11 +186,6 @@ class RotinaDuplicados(RotinaBanco):
         self.rotina_atualizar_dados_nao_duplicados()
         self.rotina_atualizar_dados_nao_duplicados()
 
-
     def rotina_principal(self):
         self.rotina_dados_atualizados()
         self.rotina_dados_novos()
-
-if __name__ == '__main__':
-    RotinaDuplicados().rotina_principal()
-
