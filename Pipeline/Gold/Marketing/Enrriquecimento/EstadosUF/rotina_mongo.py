@@ -25,7 +25,7 @@ class DadosUFS(Mongo):
 
         return tb_regiao
 
-    def coluna_regiao(self, tabela_marketing: pl.DataFrame) -> pl.DataFrame:
+    def regiao(self, tabela_marketing: pl.DataFrame) -> pl.DataFrame:
         """
         Realiza um inner join da tabela 'tabela_marketing' com a tabela de 'tb_regiao' para que a tabela de marketing
         possa ser as informações de região em sua principal
