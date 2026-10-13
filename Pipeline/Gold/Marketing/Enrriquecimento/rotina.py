@@ -7,7 +7,7 @@ from Pipeline.Gold.SubRotinasCamada.sub_rotinas_camada import SubRotinasCamada
 import polars as pl
 
 
-class MarketingGold(RotinaBanco):
+class EnrriquecimentoMarketing(RotinaBanco):
     def __init__(self):
         super().__init__()
         self.__nm_marketing_silver: str = 'projeto_churn.silver.tb_churn_marketing'
@@ -32,4 +32,4 @@ class MarketingGold(RotinaBanco):
         return tabela
 
 if __name__ == '__main__':
-    MarketingGold().rotina()
+    EnrriquecimentoMarketing().rotina()
