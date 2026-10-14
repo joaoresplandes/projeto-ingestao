@@ -26,7 +26,7 @@ class TransformParticipacao:
         :return: pl.DataFrame filtrada
         """
         tabela = self.__tabela.filter(
-            (~pl.col('vlr_coparticipacao').is_null()) |
+            (~pl.col('vlr_coparticipacao').is_null()) &
             (pl.col('vlr_coparticipacao') < self.__desvio_padrao)
         )
 
@@ -82,4 +82,3 @@ class TransformParticipacao:
             ).sort(by='id')
         else:
             return self.__tabela
-
