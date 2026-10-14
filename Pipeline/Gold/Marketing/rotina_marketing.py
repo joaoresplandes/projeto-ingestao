@@ -10,7 +10,3 @@ class RotinaMarketing:
         tabela = EnrriquecimentoMarketing().rotina()
         tabela = TransformacaoMarketing(tabela_enrriquecida=tabela).executar()
         FluxoBanco(tabela=tabela).executar()
-
-
-if __name__ == '__main__':
-    RotinaMarketing().executar()

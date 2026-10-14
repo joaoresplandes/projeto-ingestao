@@ -30,6 +30,3 @@ class EnrriquecimentoMarketing(RotinaBanco):
         tabela = RotinaCliente().rotina(tabela=tabela)
 
         return tabela
-
-if __name__ == '__main__':
-    EnrriquecimentoMarketing().rotina()
