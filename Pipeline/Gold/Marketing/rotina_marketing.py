@@ -7,7 +7,8 @@ class RotinaMarketing:
     @staticmethod
     def executar():
         tabela = EnrriquecimentoMarketing().rotina()
-        TransformacaoMarketing(tabela_enrriquecida=tabela).executar()
+        tabela = TransformacaoMarketing(tabela_enrriquecida=tabela).executar()
+        print(tabela)
 
 
 if __name__ == '__main__':
